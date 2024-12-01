@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;
 
+
 class LoginRequest extends FormRequest
 {
     /**
@@ -27,7 +28,7 @@ class LoginRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'email' => ['required', 'string', 'email'],
+            'loginname' => ['required', 'string', 'max:50'],
             'password' => ['required', 'string'],
         ];
     }
@@ -40,15 +41,23 @@ class LoginRequest extends FormRequest
     public function authenticate(): void
     {
         $this->ensureIsNotRateLimited();
-
-        if (! Auth::attempt($this->only('email', 'password'), $this->boolean('remember'))) {
+    
+        $loginname = $this->input('loginname');
+        $password = $this->input('password');
+    
+        // Tentukan field berdasarkan input loginname
+        $field = filter_var($loginname, FILTER_VALIDATE_EMAIL) ? 'email' 
+                 : (preg_match('/^\+?[0-9]{13,15}$/', $loginname) ? 'phone' : 'name');
+    
+        // Lakukan autentikasi
+        if (! Auth::attempt([$field => $loginname, 'password' => $password], $this->boolean('remember'))) {
             RateLimiter::hit($this->throttleKey());
-
+    
             throw ValidationException::withMessages([
-                'email' => trans('auth.failed'),
+                'loginname' => trans('auth.failed'),
             ]);
         }
-
+    
         RateLimiter::clear($this->throttleKey());
     }
 

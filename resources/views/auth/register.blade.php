@@ -17,11 +17,11 @@
         </div>
 
         <!-- No Telepon Address -->
-        {{-- <div class="mt-4">
-            <x-input-label for="phone" :value="__('phone')" />
-            <x-text-input id="phone" class="block mt-1 w-full" type="phone" name="phone" :value="old('phone')" required autocomplete="username" />
+        <div class="mt-4">
+            <x-input-label for="phone" :value="__('No Telepon')" />
+            <x-text-input id="phone" class="block mt-1 w-full" type="number" name="phone" :value="old('phone')" required />
             <x-input-error :messages="$errors->get('phone')" class="mt-2" />
-        </div> --}}
+        </div>
 
         <!-- Password -->
         <div class="mt-4">
