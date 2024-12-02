@@ -1,4 +1,5 @@
 <x-app-layout>
+    @section('title', 'Tentang Kami - ' . config('app.name'))
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Tentang Kami') }}
