@@ -1,6 +1,6 @@
 <x-guest-layout>
     @section('title', 'Register - ' . config('app.name'))
-    <form method="POST" action="{{ route('register-organization') }}">
+    <form method="POST" action="{{ route('register/organization') }}">
         @csrf
 
         <!-- Name -->

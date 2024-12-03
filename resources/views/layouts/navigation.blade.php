@@ -74,10 +74,12 @@
                         <x-dropdown-link :href="route('login')">
                             {{ __('Login') }}
                         </x-dropdown-link>
-                        <button>
-                            Buat akun
-                            <x-modal-link></x-modal-link>
-                        </button>
+                        <x-dropdown-link :href="route('register')">
+                            {{ __('Daftar sebagai relawan') }}
+                        </x-dropdown-link>
+                        <x-dropdown-link :href="route('register/organization')">
+                            {{ __('Daftar sebagai organisasi') }}
+                        </x-dropdown-link>
                     </x-slot>
                 </x-dropdown>
             </div>
