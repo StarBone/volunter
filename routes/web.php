@@ -11,8 +11,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/dashboard', function () {
-    return view('organization.dashboard-organization');
+    return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('organization/dashboard', function () {
+    return view('organization.dashboard-organization');
+})->middleware(['auth', 'admin'])->name('organization/dashboard');
 
 Route::get('/about', function () {
     return view('about');
