@@ -5,6 +5,7 @@ password
 jenis kelamin
 tgl lahir
 ketertarikan isu -> Bidang dalam database, pake Enum
+		 = kesehatan, pendidikan, lingkungan
 profesi
 institusi
 --Domisili
