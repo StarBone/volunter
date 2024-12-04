@@ -48,6 +48,6 @@ class RegisteredOrganizationController extends Controller
 
         Auth::login($user);
 
-        return redirect(route('organization/dashboard', absolute: false));
+        return redirect()->route('organization/dashboard');
     }
 }

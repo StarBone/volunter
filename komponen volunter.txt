@@ -1,0 +1,32 @@
+registrasi relawan :
+nama
+email
+password
+jenis kelamin
+tgl lahir
+ketertarikan isu -> Bidang dalam database, pake Enum
+profesi
+institusi
+--Domisili
+provinsi -> pake Enum
+kota -> pake Enum, Jika provinsi belum dipilih, disable box kota
+
+registrasi organisasi :
+nama
+email pribadi
+no hp --
+password
+
+nama organisasi
+bidang --
+tipe --
+email --
+no HP --
+lokasi
+website
+tanggal Pendirian
+relawan
+
+aktivitas
+
+comment Relawan

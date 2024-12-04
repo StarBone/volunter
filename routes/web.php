@@ -16,7 +16,7 @@ Route::get('/dashboard', function () {
 
 Route::get('organization/dashboard', function () {
     return view('organization.dashboard-organization');
-})->middleware(['auth', 'admin'])->name('organization/dashboard');
+})->middleware(['auth', 'admin', 'verified'])->name('organization/dashboard');
 
 Route::get('/about', function () {
     return view('about');
