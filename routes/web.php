@@ -7,10 +7,6 @@ use App\Http\Controllers\OrganizationController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-// Route::get('/', function () {
-//     return view('home');
-// });
-
 //User
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
