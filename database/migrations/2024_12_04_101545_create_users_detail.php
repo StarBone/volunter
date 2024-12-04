@@ -22,7 +22,6 @@ return new class extends Migration
             $table->string('institusi');
             $table->enum('provinsi', ['jawa timur', 'jawa barat']);
             $table->enum('kota', ['kabupaten bekasi', 'kota bekasi', 'kota malang', 'kota surabaya']);
-            $table->string('address');
             $table->timestamps();
         });
     }
