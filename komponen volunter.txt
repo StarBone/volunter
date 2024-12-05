@@ -31,3 +31,11 @@ relawan
 aktivitas
 
 comment Relawan
+
+
+Buat Aktivitas :
+Judul Aktivitas
+Tugas Relawan
+Waktu Aktivitas
+
+pilih relawan

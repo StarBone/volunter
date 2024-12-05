@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\Activity\ActivityController;
+use App\Http\Controllers\ActivityDetailController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\OrganizationController;
 use App\Http\Controllers\ProfileController;
@@ -12,7 +13,9 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 
-Route::get('/activity/search', [ActivityController::class, 'index'])->name('activty/search');
+Route::get('/activity/search', [ActivityController::class, 'index'])->name('/activty/search');
+
+Route::get('/activity', [ActivityDetailController::class, 'index'])->name('/activty');
 
 Route::get('/organization/search', [OrganizationController::class, 'index'])->name('/organization/search');
 
