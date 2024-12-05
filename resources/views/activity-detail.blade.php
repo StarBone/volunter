@@ -110,8 +110,21 @@
 
                     <section>
                         <h1 class="text-lg font-bold mt-5">GALERI</h1>
-                        <div class="galeri py-5">
-                            <img class="size-32" src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="galeri py-5 flex flex-wrap">
+                            <div class="flex-1 w-1/2 me-2">
+                                <img class="aspect-video" src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            </div>
+                            <div class="flex-1 w-1/2 ms-2">
+                                <img class="aspect-video" src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            </div>
+                        </div>
+                        <div class="galeri flex flex-wrap">
+                            <div class="flex-1 w-1/2 me-2">
+                                <img class="aspect-video" src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            </div>
+                            <div class="flex-1 w-1/2 ms-2">
+                                <img class="aspect-video" src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            </div>
                         </div>
                         <hr class="mt-5">
                     </section>
@@ -140,8 +153,20 @@
                         </div>
                     </div>
                 </section>
-                <button>JADI RELAWAN</button>
-                <button>KONTAK KAMI</button>
+                <button class="w-full mt-4 bg-lime-600 hover:bg-lime-300 text-white font-semibold py-2 px-4 rounded"><i class="fa-solid fa-user pr-2"></i>JADI RELAWAN</button>
+                <button class="w-full mt-4 bg-yellow-600 hover:bg-yellow-300 text-white font-semibold py-2 px-4 rounded"><i class="fa-solid fa-envelope pr-2"></i>KONTAK KAMI</button>
+                <div class="button-sosmed flex items-center space-x-3 mt-4">
+                    <button class="p-3 flex-1 bg-blue-600 rounded flex items-center justify-center">
+                        <i class="fa-brands fa-facebook-f text-white"></i>
+                    </button>
+                    <button class="p-3 flex-1 bg-blue-500 rounded flex items-center justify-center">
+                        <i class="fa-brands fa-x-twitter text-white"></i>
+                    </button>
+                    <button class="p-3 flex-1 bg-pink-500 rounded flex items-center justify-center">
+                        <i class="fa-brands fa-instagram text-white"></i>
+                    </button>
+                </div>
+                
             </div>
         </div>
     </main>

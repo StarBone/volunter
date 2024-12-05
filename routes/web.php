@@ -19,7 +19,6 @@ Route::get('/activity', [ActivityDetailController::class, 'index'])->name('/acti
 
 Route::get('/organization/search', [OrganizationController::class, 'index'])->name('/organization/search');
 
-
 //Auth
 Route::get('/dashboard', function () {
     return view('dashboard');
