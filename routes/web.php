@@ -5,7 +5,9 @@ use App\Http\Controllers\Activity\ActivityController;
 use App\Http\Controllers\ActivityDetailController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\OrganizationController;
+use App\Http\Controllers\OrganizationDetailController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TesController;
 use Illuminate\Support\Facades\Route;
 
 //User
@@ -18,6 +20,12 @@ Route::get('/activity/search', [ActivityController::class, 'index'])->name('/act
 Route::get('/activity', [ActivityDetailController::class, 'index'])->name('/activty');
 
 Route::get('/organization/search', [OrganizationController::class, 'index'])->name('/organization/search');
+
+Route::get('/organization', [OrganizationDetailController::class, 'index'])->name('/organization');
+
+Route::get('/tes', [TesController::class, 'index'])->name('/tes');
+
+
 
 //Auth
 Route::get('/dashboard', function () {

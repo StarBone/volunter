@@ -153,20 +153,21 @@
                         </div>
                     </div>
                 </section>
-                <button class="w-full mt-4 bg-lime-600 hover:bg-lime-300 text-white font-semibold py-2 px-4 rounded"><i class="fa-solid fa-user pr-2"></i>JADI RELAWAN</button>
-                <button class="w-full mt-4 bg-yellow-600 hover:bg-yellow-300 text-white font-semibold py-2 px-4 rounded"><i class="fa-solid fa-envelope pr-2"></i>KONTAK KAMI</button>
-                <div class="button-sosmed flex items-center space-x-3 mt-4">
-                    <button class="p-3 flex-1 bg-blue-600 rounded flex items-center justify-center">
-                        <i class="fa-brands fa-facebook-f text-white"></i>
-                    </button>
-                    <button class="p-3 flex-1 bg-blue-500 rounded flex items-center justify-center">
-                        <i class="fa-brands fa-x-twitter text-white"></i>
-                    </button>
-                    <button class="p-3 flex-1 bg-pink-500 rounded flex items-center justify-center">
-                        <i class="fa-brands fa-instagram text-white"></i>
-                    </button>
-                </div>
-                
+                <section>
+                    <button class="w-full mt-4 bg-lime-600 hover:bg-lime-300 text-white font-semibold py-2 px-4 rounded"><i class="fa-solid fa-user pr-2"></i>JADI RELAWAN</button>
+                    <button class="w-full mt-4 bg-yellow-600 hover:bg-yellow-300 text-white font-semibold py-2 px-4 rounded"><i class="fa-solid fa-envelope pr-2"></i>KONTAK KAMI</button>
+                    <div class="button-sosmed flex items-center space-x-3 mt-4">
+                        <button class="p-3 flex-1 bg-blue-600 rounded flex items-center justify-center">
+                            <i class="fa-brands fa-facebook-f text-white"></i>
+                        </button>
+                        <button class="p-3 flex-1 bg-blue-500 rounded flex items-center justify-center">
+                            <i class="fa-brands fa-x-twitter text-white"></i>
+                        </button>
+                        <button class="p-3 flex-1 bg-pink-500 rounded flex items-center justify-center">
+                            <i class="fa-brands fa-instagram text-white"></i>
+                        </button>
+                    </div>
+                </section>
             </div>
         </div>
     </main>

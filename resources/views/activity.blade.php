@@ -58,6 +58,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="card-2 max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden">
                     <img class="w-full h-40 object-cover rounded-b-lg" src="https://via.placeholder.com/300" alt="Card Image">
                     <div class="p-4">
