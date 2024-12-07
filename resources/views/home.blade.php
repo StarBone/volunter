@@ -2,6 +2,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     @section('title', 'Home - ' . config('app.name'))
 
     <main class="max-w-[1440px] mx-auto bg-gray-100 font-jakarta overflow-hidden">
@@ -53,8 +54,7 @@
             </div>
         </section>
 
-        <section class="h-[110vh] overflow-hidden">
-            <div class="h-8 mt-[-30px] bg-gray-100 rounded-t-xl"/>
+        <section id="activity" class="h-[105vh] overflow-hidden">
             <div class="px-5 py-14 flex flex-col items-center">
                 <span class="px-5 py-2 bg-sky-100 text-blue-800 font-bold text-sm rounded-2xl">Aktivitas Relawan</span>
                 <h1 class="mt-10 text-3xl text-center w-7/12">Temukan Aktivitas Kerelawanan Sesuai Minat Dan Isu Yang Kamu Sukai</h1>
@@ -66,18 +66,88 @@
                 </div>
 
                 <div class="mt-8 flex flex-row space-x-14">  
-                    <div class="flex flex-col h-96 w-64 bg-slate-500 rounded-xl">  
+                    <div class="flex flex-col h-96 w-64 bg-white rounded-xl">  
                         <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
-                        <h1 class="px-3 text-md text-start font-semibold">Duta Semesta Batch 2</h1>   
-                        <p class="mt-2 px-3 text-xs text-start">  
+                        <h1 class="px-5 text-sm text-start font-semibold">Duta Semesta Batch 2</h1>   
+                        <p class="mt-2 px-5 text-xs text-start">  
                             {{ \Illuminate\Support\Str::limit('Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan', 70, '...') }}  
                         </p>
-                        <span class="px-3 mt-2 text-xs">Bersama : Rumah Belajar</span>
-                        <div class="flex flex-row">
-                            <img class="mt-2 px-3" src="{{ asset('images/icon/calender.svg') }}" alt="">
-                            <span class="px-3 mt-2 text-xs">20 Mei 2023</span>
+                        <span class="px-5 mt-2 text-xs">Bersama : Rumah Belajar</span>
+                        <div class="mt-2 flex flex-row items-center">
+                            <img class="h-5 pl-5 pr-1" src="{{ asset('images/icon/calender.svg') }}" alt="">
+                            <span class="py-1 text-sky-800 text-xs">20 Mei 2023</span>
+                            <div class="mx-2 size-2 rounded-full bg-gray-600"></div>
+                            <img class="h-5" src="{{ asset('images/icon/location.svg') }}" alt="">
+                            <span class="py-1 text-sky-800 text-xs">Jakarta</span>
                         </div>
+                        <button class="mt-2 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:bg-sky-700">Gabung</button>
                     </div>  
+                    <div class="flex flex-col h-96 w-64 bg-white rounded-xl">  
+                        <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
+                        <h1 class="px-5 text-sm text-start font-semibold">Duta Semesta Batch 2</h1>   
+                        <p class="mt-2 px-5 text-xs text-start">  
+                            {{ \Illuminate\Support\Str::limit('Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan', 70, '...') }}  
+                        </p>
+                        <span class="px-5 mt-2 text-xs">Bersama : Rumah Belajar</span>
+                        <div class="mt-2 flex flex-row items-center">
+                            <img class="h-5 pl-5 pr-1" src="{{ asset('images/icon/calender.svg') }}" alt="">
+                            <span class="py-1 text-sky-800 text-xs">20 Mei 2023</span>
+                            <div class="mx-2 size-2 rounded-full bg-gray-600"></div>
+                            <img class="h-5" src="{{ asset('images/icon/location.svg') }}" alt="">
+                            <span class="py-1 text-sky-800 text-xs">Jakarta</span>
+                        </div>
+                        <button class="mt-2 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:bg-sky-700">Gabung</button>
+                    </div>  
+                    <div class="flex flex-col h-96 w-64 bg-white rounded-xl">  
+                        <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
+                        <h1 class="px-5 text-sm text-start font-semibold">Duta Semesta Batch 2</h1>   
+                        <p class="mt-2 px-5 text-xs text-start">  
+                            {{ \Illuminate\Support\Str::limit('Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan', 70, '...') }}  
+                        </p>
+                        <span class="px-5 mt-2 text-xs">Bersama : Rumah Belajar</span>
+                        <div class="mt-2 flex flex-row items-center">
+                            <img class="h-5 pl-5 pr-1" src="{{ asset('images/icon/calender.svg') }}" alt="">
+                            <span class="py-1 text-sky-800 text-xs">20 Mei 2023</span>
+                            <div class="mx-2 size-2 rounded-full bg-gray-600"></div>
+                            <img class="h-5" src="{{ asset('images/icon/location.svg') }}" alt="">
+                            <span class="py-1 text-sky-800 text-xs">Jakarta</span>
+                        </div>
+                        <button class="mt-2 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:bg-sky-700">Gabung</button>
+                    </div>  
+                </div>
+            </div>
+        </section>
+
+        <section class="h-screen">
+            <div class="px-5 py-14 flex flex-col items-center">
+                <span class="px-5 py-2 bg-sky-100 text-blue-800 font-bold text-sm rounded-2xl">Testimoni</span>
+                <h1 class="mt-10 text-3xl text-center w-7/12">Apa Kata Mereka Yang Pernah Gabung Relawan</h1>
+                <div class="flex flex-row mt-10 space-x-5">
+                    <i class="fa-solid fa-chevron-left px-3 py-2 rounded-full border border-sky-500 text-sky-500"></i>
+                    <i class="fa-solid fa-chevron-right px-3 py-2 rounded-full border border-sky-500 text-sky-500"></i>
+                </div>
+                <div class="flex flex-row mt-10 space-x-5">
+                    <div class="p-7 h-56 w-96 bg-white rounded-xl">
+                        <div class="flex items-center space-x-3">
+                            <div class="block size-10 bg-gray-600 rounded-md"></div>
+                            <h1 class="">John Doe</h1>
+                        </div>
+                        <p class="mt-5 text-xs leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sapiente qui voluptatibus velit magni veniam sequi omnis earum eligendi corrupti quo fugiat, ducimus nesciunt magnam quos sit! Laboriosam, incidunt dicta.</p>
+                    </div>
+                    <div class="p-7 h-56 w-96 bg-white rounded-xl">
+                        <div class="flex items-center space-x-3">
+                            <div class="block size-10 bg-gray-600 rounded-md"></div>
+                            <h1 class="">John Doe</h1>
+                        </div>
+                        <p class="mt-5 text-xs leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sapiente qui voluptatibus velit magni veniam sequi omnis earum eligendi corrupti quo fugiat, ducimus nesciunt magnam quos sit! Laboriosam, incidunt dicta.</p>
+                    </div>
+                    <div class="p-7 h-56 w-96 bg-white rounded-xl">
+                        <div class="flex items-center space-x-3">
+                            <div class="block size-10 bg-gray-600 rounded-md"></div>
+                            <h1 class="">John Doe</h1>
+                        </div>
+                        <p class="mt-5 text-xs leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sapiente qui voluptatibus velit magni veniam sequi omnis earum eligendi corrupti quo fugiat, ducimus nesciunt magnam quos sit! Laboriosam, incidunt dicta.</p>
+                    </div>
                 </div>
             </div>
         </section>
