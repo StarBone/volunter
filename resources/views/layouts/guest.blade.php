@@ -14,14 +14,7 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans text-gray-900 antialiased">
-        <div class="min-h-screen flex flex-row sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
-            <div class="h-screen w-full px-6 py-4 bg-white shadow-md overflow-hidden">
-                {{ $slot }}
-            </div>
-            <div class="h-screen w-full px-6 py-4 bg-gray-300 shadow-md overflow-hidden">
-                    <img src="https://drive.google.com/file/d/1MtgtK1ztDGbB7_IAv_GDf5uuBfwQFhMR/view?usp=sharing" class="size-80" alt="">
-            </div>
-        </div>
+    <body class="font-sans text-gray-900 bg-fixed" style="background-image: url({{ asset('images/Background.png') }})">
+        {{ $slot }}
     </body>
 </html>

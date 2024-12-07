@@ -4,68 +4,67 @@
     <form method="POST" action="{{ route('register') }}">
         @csrf
 
-        <!-- Name -->
-        <div>
-            <x-input-label for="name" :value="__('Name')" />
-            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
-            <x-input-error :messages="$errors->get('name')" class="mt-2" />
-        </div>
+        <div class="flex flex-col md:flex-row justify-center items-center">
+            <div class="h-screen w-3/4" id="card-1">
+                <div class="md:px-8 mt-11 md:mx-24">
+                    <x-application-logo class="block h-9 w-auto fill-current"/>
+                    <h1 class="text-2xl w-96">Buat Akun Anda Untuk Membuat Langkah Berdampak</h1>
+                    <div class="flex mt-5 py-2 px-4 w-10/12 bg-blue-200 border border-blue-400 rounded-md">
+                        <i class="fa-solid fa-circle-info pt-0.5 flex-none"></i>
+                        <span class="text-sm font-semibold pl-2 flex-1">Ingin mendaftarkan orgnisasi kamu?</span>
+                        <a href="{{ route('register/organization') }}" class="text-sm underline font-bold">Daftar Sekarang</a>
+                    </div>
+            
+                    <div class="flex flex-col space-y-2 mt-3">
+                        <x-input-label for="name" :value="__('Nama Lengkap')" />
+                        <x-text-input id="name" class="block w-10/12" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+                        <x-input-error :messages="$errors->get('name')" class="mt-2" />
+                    </div>
+            
+                    <div class="flex flex-col space-y-2 mt-3">
+                        <x-input-label for="email" :value="__('Email')" />
+                        <x-text-input id="email" class="block w-10/12" type="email" name="email" :value="old('email')" required autocomplete="username" />
+                        <x-input-error :messages="$errors->get('email')" class="mt-2" />
+                    </div>
+            
+                    <div class="flex flex-col space-y-2 mt-3">
+                        <x-input-label for="phone" :value="__('No Telepon')" />
+                        <x-text-input id="phone" class="block w-10/12" type="number" name="phone" :value="old('phone')" required />
+                        <x-input-error :messages="$errors->get('phone')" class="mt-2" />
+                    </div>
+            
+                    <div class="flex flex-col space-y-2 mt-3 relative">
+                        <x-input-label for="password" :value="__('Password')" />
+                        <div class="flex">
+                            <x-text-input-pass id="password" class="w-9/12 md:w-8/12 lg:w-9/12"
+                            type="password"
+                            name="password"
+                            required autocomplete="new-password" />
+            
+                            <button type="button" id="togglePassword" class="px-3.5 bg-transparent text-gray-600 border border-gray-300 rounded-r-md focus:outline-none">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                        </div>
+                        <x-input-error :messages="$errors->get('password')" class="mt-2" />
+                    </div>
+            
+                    <div class="">
+                        <x-primary-button class="mt-5">
+                            {{ __('Buat Akun') }}
+                        </x-primary-button>
+                    </div>
 
-        <!-- Email Address -->
-        <div class="mt-4">
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
-        </div>
-
-        <!-- No Telepon Address -->
-        <div class="mt-4">
-            <x-input-label for="phone" :value="__('No Telepon')" />
-            <x-text-input id="phone" class="block mt-1 w-full" type="number" name="phone" :value="old('phone')" required />
-            <x-input-error :messages="$errors->get('phone')" class="mt-2" />
-        </div>
-
-        <!-- Password -->
-        <div class="mt-4 relative">
-            <x-input-label for="password" :value="__('Password')" />
-
-            <x-text-input id="password" class="block mt-1 w-full pr-10"
-                        type="password"
-                        name="password"
-                        required autocomplete="new-password" />
-
-            <button type="button" id="togglePassword" class="absolute inset-y-0 right-0 top-5 px-3 text-gray-600 focus:outline-none">
-                <i class="fa-regular fa-eye"></i>
-            </button>
-
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
-
-        <!-- Confirm Password -->
-        <div class="mt-4 relative">
-            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
-
-            <x-text-input id="password_confirmation" class="block mt-1 w-full pr-10"
-                        type="password"
-                        name="password_confirmation"
-                        required autocomplete="new-password" />
-
-            <button type="button" id="toggleConfirmPassword" class="absolute inset-y-0 right-0 top-5 px-3 text-gray-600 focus:outline-none">
-                <i class="fa-regular fa-eye"></i>
-            </button>
-
-            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
-        </div>
-
-
-        <div class="flex items-center justify-end mt-4">
-            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
-                {{ __('Already registered?') }}
-            </a>
-
-            <x-primary-button class="ms-4">
-                {{ __('Register') }}
-            </x-primary-button>
+                    <div class="mt-5">
+                        <span class="text-sm">Sudah punya akun?</span>
+                        <a href="{{ route('login') }}" class="text-sm underline font-bold">Masuk Sekarang</a>
+                    </div>
+                </div>
+            </div>
+            <div class="h-screen w-2/4 px-6 py-4" id="card-2">
+                <div class="size-auto">
+                    <img src="{{ asset('images/Image.png') }}" class="w-full h-full object-cover" alt="">
+                </div>
+            </div>
         </div>
     </form>
     <script>
