@@ -80,7 +80,7 @@
                             <img class="h-5" src="{{ asset('images/icon/location.svg') }}" alt="">
                             <span class="py-1 text-sky-800 text-xs">Jakarta</span>
                         </div>
-                        <button class="mt-2 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:bg-sky-700">Gabung</button>
+                        <button class="mt-2 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700">Gabung</button>
                     </div>  
                     <div class="flex flex-col h-96 w-64 bg-white rounded-xl">  
                         <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
@@ -96,7 +96,7 @@
                             <img class="h-5" src="{{ asset('images/icon/location.svg') }}" alt="">
                             <span class="py-1 text-sky-800 text-xs">Jakarta</span>
                         </div>
-                        <button class="mt-2 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:bg-sky-700">Gabung</button>
+                        <button class="mt-2 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700">Gabung</button>
                     </div>  
                     <div class="flex flex-col h-96 w-64 bg-white rounded-xl">  
                         <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
@@ -112,7 +112,7 @@
                             <img class="h-5" src="{{ asset('images/icon/location.svg') }}" alt="">
                             <span class="py-1 text-sky-800 text-xs">Jakarta</span>
                         </div>
-                        <button class="mt-2 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:bg-sky-700">Gabung</button>
+                        <button class="mt-2 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700">Gabung</button>
                     </div>  
                 </div>
             </div>
@@ -151,5 +151,9 @@
                 </div>
             </div>
         </section>
+        {{-- <x-layout-footer/> --}}
+        <footer>
+            <h1 class="py-10 text-center text-white bg-slate-500">copyright 2024 Hasan Nasuha</h1>
+        </footer>
     </main>
 </x-app-layout>

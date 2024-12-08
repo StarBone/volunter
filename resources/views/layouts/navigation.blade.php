@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-sky-200 w-[97%] rounded-lg mt-3 mb-4 mx-auto">
+<nav x-data="{ open: false }" class="bg-sky-700 w-[97%] rounded-lg mt-3 mb-4 mx-auto">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-14">

@@ -1,115 +1,128 @@
-<x-app-layout>
-    @section('title', 'Cari Aktivitas - ' . config('app.name'))
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Aktivitas') }}
-        </h2>
-    </x-slot>
-
-    <div class="py-3">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900">
-                    <div class="flex items-center space-x-2">
-                        <input 
-                            type="text" 
-                            class="flex-1 p-1 border border-gray-300 rounded-l-md focus:outline-none focus:ring focus:ring-blue-300" 
-                            placeholder="Judul Aktivitas"
-                        />
-                        <button 
-                            type="submit" 
-                            class="bg-blue-500 text-white px-4 py-1.5 rounded-r-md hover:bg-blue-600 focus:ring focus:ring-blue-300 flex items-center justify-center"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35m2.8-6.65a8 8 0 11-16 0 8 8 0 0116 0z" />
-                            </svg>
-                        </button>
+<x-app-layout>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">  
+    <main class="flex flex-col min-h-screen mx-6">  <!-- Added min-h-screen -->  
+        <div class="flex flex-col flex-grow">  <!-- Added flex-grow -->  
+            <h1 class="ml-16 text-2xl text-gray-900">Aktivitas Membutuhkan Bantuan Kamu</h1>  
+            <div class="mt-5 ml-[3.2rem] flex">   
+                <div class="m-3 flex items-center border border-gray-400 rounded-full">  
+                    <input type="text" class="ml-2 h-6 w-auto focus:outline-none focus:ring-0 border-none" placeholder="Cari Aktivitas">  
+                    <div class="px-3 py-2">  
+                        <i class="fa-solid fa-magnifying-glass text-gray-400"></i>  
                     </div>
+                </div>  
+                <div class="m-3 flex items-center border border-gray-400 rounded-full">  
+                    <h1 class="pl-5 py-2 text-gray-700">Semua Kategori</h1>
+                    <i class="fa-solid fa-chevron-down pl-2 pr-5 text-gray-700"></i>
+                </div>  
+                <div class="m-3 flex items-center border border-gray-400 rounded-full">  
+                    <h1 class="pl-5 py-2 text-gray-700">Terbaru</h1>
+                    <i class="fa-solid fa-chevron-down pl-2 pr-5 text-gray-700"></i>
+                </div>  
+            </div>
+            <div class="my-5 mx-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+                <div class="flex flex-col h-auto w-80 bg-white rounded-xl">  
+                    <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
+                    <h1 class="mt-3 px-5 text-lg text-start font-semibold">Duta Semesta Batch 2</h1>   
+                    <p class="mt-2 px-5 text-xs text-start">  
+                        {{ \Illuminate\Support\Str::limit('Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan', 70, '...') }}  
+                    </p>  
+                    <span class="px-5 mt-2 text-xs">Bersama : Rumah Belajar</span>  
+                    <div class="mt-2 flex flex-row items-center">  
+                        <img class="h-5 pl-5 pr-1" src="{{ asset('images/icon/calender.svg') }}" alt="">  
+                        <span class="py-1 text-sky-800 text-xs">20 Mei 2023</span>  
+                        <div class="mx-2 size-2 rounded-full bg-gray-600"></div>  
+                        <img class="h-5" src="{{ asset('images/icon/location.svg') }}" alt="">  
+                        <span class="py-1 text-sky-800 text-xs">Jakarta</span>  
+                    </div>  
+                    <button class="my-3 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700">Gabung</button>  
+                </div>
+                <div class="flex flex-col h-auto w-80 bg-white rounded-xl">  
+                    <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
+                    <h1 class="mt-3 px-5 text-lg text-start font-semibold">Duta Semesta Batch 2</h1>   
+                    <p class="mt-2 px-5 text-xs text-start">  
+                        {{ \Illuminate\Support\Str::limit('Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan', 70, '...') }}  
+                    </p>  
+                    <span class="px-5 mt-2 text-xs">Bersama : Rumah Belajar</span>  
+                    <div class="mt-2 flex flex-row items-center">  
+                        <img class="h-5 pl-5 pr-1" src="{{ asset('images/icon/calender.svg') }}" alt="">  
+                        <span class="py-1 text-sky-800 text-xs">20 Mei 2023</span>  
+                        <div class="mx-2 size-2 rounded-full bg-gray-600"></div>  
+                        <img class="h-5" src="{{ asset('images/icon/location.svg') }}" alt="">  
+                        <span class="py-1 text-sky-800 text-xs">Jakarta</span>  
+                    </div>  
+                    <button class="my-3 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700">Gabung</button>  
+                </div>
+                <div class="flex flex-col h-auto w-80 bg-white rounded-xl">  
+                    <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
+                    <h1 class="mt-3 px-5 text-lg text-start font-semibold">Duta Semesta Batch 2</h1>   
+                    <p class="mt-2 px-5 text-xs text-start">  
+                        {{ \Illuminate\Support\Str::limit('Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan', 70, '...') }}  
+                    </p>  
+                    <span class="px-5 mt-2 text-xs">Bersama : Rumah Belajar</span>  
+                    <div class="mt-2 flex flex-row items-center">  
+                        <img class="h-5 pl-5 pr-1" src="{{ asset('images/icon/calender.svg') }}" alt="">  
+                        <span class="py-1 text-sky-800 text-xs">20 Mei 2023</span>  
+                        <div class="mx-2 size-2 rounded-full bg-gray-600"></div>  
+                        <img class="h-5" src="{{ asset('images/icon/location.svg') }}" alt="">  
+                        <span class="py-1 text-sky-800 text-xs">Jakarta</span>  
+                    </div>  
+                    <button class="my-3 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700">Gabung</button>  
+                </div>
+                <div class="flex flex-col h-auto w-80 bg-white rounded-xl">  
+                    <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
+                    <h1 class="mt-3 px-5 text-lg text-start font-semibold">Duta Semesta Batch 2</h1>   
+                    <p class="mt-2 px-5 text-xs text-start">  
+                        {{ \Illuminate\Support\Str::limit('Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan', 70, '...') }}  
+                    </p>  
+                    <span class="px-5 mt-2 text-xs">Bersama : Rumah Belajar</span>  
+                    <div class="mt-2 flex flex-row items-center">  
+                        <img class="h-5 pl-5 pr-1" src="{{ asset('images/icon/calender.svg') }}" alt="">  
+                        <span class="py-1 text-sky-800 text-xs">20 Mei 2023</span>  
+                        <div class="mx-2 size-2 rounded-full bg-gray-600"></div>  
+                        <img class="h-5" src="{{ asset('images/icon/location.svg') }}" alt="">  
+                        <span class="py-1 text-sky-800 text-xs">Jakarta</span>  
+                    </div>  
+                    <button class="my-3 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700">Gabung</button>  
+                </div>
+                <div class="flex flex-col h-auto w-80 bg-white rounded-xl">  
+                    <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
+                    <h1 class="mt-3 px-5 text-lg text-start font-semibold">Duta Semesta Batch 2</h1>   
+                    <p class="mt-2 px-5 text-xs text-start">  
+                        {{ \Illuminate\Support\Str::limit('Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan', 70, '...') }}  
+                    </p>  
+                    <span class="px-5 mt-2 text-xs">Bersama : Rumah Belajar</span>  
+                    <div class="mt-2 flex flex-row items-center">  
+                        <img class="h-5 pl-5 pr-1" src="{{ asset('images/icon/calender.svg') }}" alt="">  
+                        <span class="py-1 text-sky-800 text-xs">20 Mei 2023</span>  
+                        <div class="mx-2 size-2 rounded-full bg-gray-600"></div>  
+                        <img class="h-5" src="{{ asset('images/icon/location.svg') }}" alt="">  
+                        <span class="py-1 text-sky-800 text-xs">Jakarta</span>  
+                    </div>  
+                    <button class="my-3 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700">Gabung</button>  
+                </div>
+                <div class="flex flex-col h-auto w-80 bg-white rounded-xl">  
+                    <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
+                    <h1 class="mt-3 px-5 text-lg text-start font-semibold">Duta Semesta Batch 2</h1>   
+                    <p class="mt-2 px-5 text-xs text-start">  
+                        {{ \Illuminate\Support\Str::limit('Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan', 70, '...') }}  
+                    </p>  
+                    <span class="px-5 mt-2 text-xs">Bersama : Rumah Belajar</span>  
+                    <div class="mt-2 flex flex-row items-center">  
+                        <img class="h-5 pl-5 pr-1" src="{{ asset('images/icon/calender.svg') }}" alt="">  
+                        <span class="py-1 text-sky-800 text-xs">20 Mei 2023</span>  
+                        <div class="mx-2 size-2 rounded-full bg-gray-600"></div>  
+                        <img class="h-5" src="{{ asset('images/icon/location.svg') }}" alt="">  
+                        <span class="py-1 text-sky-800 text-xs">Jakarta</span>  
+                    </div>  
+                    <button class="my-3 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700">Gabung</button>  
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="py-6 bg-gray-100">
-        <div class="max-w-5xl mx-auto sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <div class="card-1 max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden">
-                    <img class="w-full h-40 object-cover rounded-b-lg" src="https://via.placeholder.com/300" alt="Card Image">
-                    <div class="p-4">
-                        <div class="flex items-center space-x-2 mb-2">
-                            <span class="bg-green-100 text-green-600 text-xs font-medium px-2.5 py-0.5 rounded-full">Project</span>
-                            <span class="bg-green-100 text-green-600 text-xs font-medium px-2.5 py-0.5 rounded-full">Pendidikan</span>
-                        </div>
-                        <h3 class="font-bold text-lg text-gray-800">Relawan Operasional - Online & Offline</h3>
-                        <p class="text-sm text-gray-600 mt-1">Gerakan Suka Baca</p>
-                        <div class="mt-4 text-sm text-gray-500 space-y-2">
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-6 18h4m-7-5h10m-3-5a2 2 0 11-4 0M3 8a9 9 0 0118 0" />
-                                </svg>
-                                <span>12 Jan 2025 - 30 Jun 2025</span>
-                            </div>
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276a1 1 0 01.894.007l2.553 1.276M12 20h9.883A2 2 0 0024 18.118v-9.236A2 2 0 0022.118 7H1.882A2 2 0 000 8.882v9.236A2 2 0 001.882 20H8" />
-                                </svg>
-                                <span>Webinar</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="card-2 max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden">
-                    <img class="w-full h-40 object-cover rounded-b-lg" src="https://via.placeholder.com/300" alt="Card Image">
-                    <div class="p-4">
-                        <div class="flex items-center space-x-2 mb-2">
-                            <span class="bg-green-100 text-green-600 text-xs font-medium px-2.5 py-0.5 rounded-full">Project</span>
-                            <span class="bg-green-100 text-green-600 text-xs font-medium px-2.5 py-0.5 rounded-full">Pendidikan</span>
-                        </div>
-                        <h3 class="font-bold text-lg text-gray-800">Relawan Operasional - Online & Offline</h3>
-                        <p class="text-sm text-gray-600 mt-1">Gerakan Suka Baca</p>
-                        <div class="mt-4 text-sm text-gray-500 space-y-2">
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-6 18h4m-7-5h10m-3-5a2 2 0 11-4 0M3 8a9 9 0 0118 0" />
-                                </svg>
-                                <span>12 Jan 2025 - 30 Jun 2025</span>
-                            </div>
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276a1 1 0 01.894.007l2.553 1.276M12 20h9.883A2 2 0 0024 18.118v-9.236A2 2 0 0022.118 7H1.882A2 2 0 000 8.882v9.236A2 2 0 001.882 20H8" />
-                                </svg>
-                                <span>Webinar</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-3 max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden">
-                    <img class="w-full h-40 object-cover rounded-b-lg" src="https://via.placeholder.com/300" alt="Card Image">
-                    <div class="p-4">
-                        <div class="flex items-center space-x-2 mb-2">
-                            <span class="bg-green-100 text-green-600 text-xs font-medium px-2.5 py-0.5 rounded-full">Project</span>
-                            <span class="bg-green-100 text-green-600 text-xs font-medium px-2.5 py-0.5 rounded-full">Pendidikan</span>
-                        </div>
-                        <h3 class="font-bold text-lg text-gray-800">Relawan Operasional - Online & Offline</h3>
-                        <p class="text-sm text-gray-600 mt-1">Gerakan Suka Baca</p>
-                        <div class="mt-4 text-sm text-gray-500 space-y-2">
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-6 18h4m-7-5h10m-3-5a2 2 0 11-4 0M3 8a9 9 0 0118 0" />
-                                </svg>
-                                <span>12 Jan 2025 - 30 Jun 2025</span>
-                            </div>
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276a1 1 0 01.894.007l2.553 1.276M12 20h9.883A2 2 0 0024 18.118v-9.236A2 2 0 0022.118 7H1.882A2 2 0 000 8.882v9.236A2 2 0 001.882 20H8" />
-                                </svg>
-                                <span>Webinar</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="flex justify-center items-center">
+                <button class="my-9 mx-6 py-2 w-32 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700"><i class="fa-solid fa-arrows-rotate pr-2"></i>Muat ulang</button>
             </div>
-        </div>
-    </div>
+        </div>  
+    </main>  
+    <footer>
+        <h1 class="py-10 text-center text-white bg-slate-500">copyright 2024 Hasan Nasuha</h1>
+    </footer>
 </x-app-layout>
