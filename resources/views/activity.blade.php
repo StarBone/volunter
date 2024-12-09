@@ -5,7 +5,7 @@
             <h1 class="ml-16 text-2xl text-gray-900">Aktivitas Membutuhkan Bantuan Kamu</h1>  
             <div class="mt-5 ml-[3.2rem] flex">   
                 <div class="m-3 flex items-center border border-gray-400 rounded-full">  
-                    <input type="text" class="ml-2 h-6 w-auto focus:outline-none focus:ring-0 border-none" placeholder="Cari Aktivitas">  
+                    <input type="text" class="ml-2 h-6 w-auto bg-gray-100 focus:outline-none focus:ring-0 border-none" placeholder="Cari Aktivitas">  
                     <div class="px-3 py-2">  
                         <i class="fa-solid fa-magnifying-glass text-gray-400"></i>  
                     </div>
