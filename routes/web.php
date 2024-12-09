@@ -1,46 +1,47 @@
 <?php
 
-use App\Http\Controllers\AboutController;
-use App\Http\Controllers\Activity\ActivityController;
-use App\Http\Controllers\ActivityDetailController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\OrganizationController;
-use App\Http\Controllers\OrganizationDetailController;
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\TesController;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AboutController;  
+use App\Http\Controllers\Activity\ActivityController;  
+use App\Http\Controllers\ActivityDetailController;  
+use App\Http\Controllers\HomeController;  
+use App\Http\Controllers\OrganizationController;  
+use App\Http\Controllers\OrganizationDetailController;  
+use App\Http\Controllers\ProfileController;  
+use App\Http\Controllers\TesController;  
+use Illuminate\Support\Facades\Route;  
 
-//User
-Route::get('/', [HomeController::class, 'index'])->name('home');
+// User  
+Route::get('/', [HomeController::class, 'index'])->name('home');  
 
-Route::get('/about', [AboutController::class, 'index'])->name('about');
+Route::get('/about', [AboutController::class, 'index'])->name('about');  
 
-Route::get('/activity/search', [ActivityController::class, 'index'])->name('/activty/search');
+// ** Tambahkan nama pada rute pencarian aktivitas **  
+Route::get('/activity/search', [ActivityController::class, 'index'])->name('activity.search'); // Ubah di sini  
 
-Route::get('/activity', [ActivityDetailController::class, 'index'])->name('/activty');
+// ** Ubah nama rute untuk detail aktivitas **  
+Route::get('/activity', [ActivityDetailController::class, 'index'])->name('activity.detail'); // Sesuaikan nama rute  
 
-Route::get('/organization/search', [OrganizationController::class, 'index'])->name('/organization/search');
+// ** Tambahkan nama pada rute pencarian organisasi **  
+Route::get('/organization/search', [OrganizationController::class, 'index'])->name('organization.search'); // Ubah di sini  
 
-Route::get('/organization', [OrganizationDetailController::class, 'index'])->name('/organization');
+// ** Ubah nama rute untuk detail organisasi **  
+Route::get('/organization', [OrganizationDetailController::class, 'index'])->name('organization.detail'); // Sesuaikan nama rute  
 
-Route::get('/tes', [TesController::class, 'index'])->name('/tes');
+Route::get('/tes', [TesController::class, 'index'])->name('tes');  
 
+// Auth  
+Route::get('/dashboard', function () {  
+    return view('dashboard');  
+})->middleware(['auth', 'verified'])->name('dashboard');  
 
+Route::get('organization/dashboard', function () {  
+    return view('organization.dashboard-organization');  
+})->middleware(['auth', 'admin', 'verified'])->name('organization.dashboard');  
 
-//Auth
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
-Route::get('organization/dashboard', function () {
-    return view('organization.dashboard-organization');
-})->middleware(['auth', 'admin', 'verified'])->name('organization/dashboard');
-
-
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
+Route::middleware('auth')->group(function () {  
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');  
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');  
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');  
+});  
 
 require __DIR__.'/auth.php';
