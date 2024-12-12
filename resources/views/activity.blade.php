@@ -34,7 +34,7 @@
                         <img class="h-5" src="{{ asset('images/icon/location.svg') }}" alt="">  
                         <span class="py-1 text-sky-800 text-xs">Jakarta</span>  
                     </div>  
-                    <button class="my-3 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700">Gabung</button>  
+                    <a class="my-3 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700 text-center" href="/activity">Gabung</a>  
                 </div>
                 <div class="flex flex-col h-auto w-80 bg-white rounded-xl">  
                     <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
@@ -50,7 +50,7 @@
                         <img class="h-5" src="{{ asset('images/icon/location.svg') }}" alt="">  
                         <span class="py-1 text-sky-800 text-xs">Jakarta</span>  
                     </div>  
-                    <button class="my-3 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700">Gabung</button>  
+                    <button class="my-3 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700" href="/activity">Gabung</button>  
                 </div>
                 <div class="flex flex-col h-auto w-80 bg-white rounded-xl">  
                     <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
@@ -66,7 +66,7 @@
                         <img class="h-5" src="{{ asset('images/icon/location.svg') }}" alt="">  
                         <span class="py-1 text-sky-800 text-xs">Jakarta</span>  
                     </div>  
-                    <button class="my-3 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700">Gabung</button>  
+                    <button class="my-3 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700" href="/activity">Gabung</button>  
                 </div>
                 <div class="flex flex-col h-auto w-80 bg-white rounded-xl">  
                     <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
@@ -82,7 +82,7 @@
                         <img class="h-5" src="{{ asset('images/icon/location.svg') }}" alt="">  
                         <span class="py-1 text-sky-800 text-xs">Jakarta</span>  
                     </div>  
-                    <button class="my-3 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700">Gabung</button>  
+                    <button class="my-3 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700" href="/activity">Gabung</button>  
                 </div>
                 <div class="flex flex-col h-auto w-80 bg-white rounded-xl">  
                     <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
@@ -98,7 +98,7 @@
                         <img class="h-5" src="{{ asset('images/icon/location.svg') }}" alt="">  
                         <span class="py-1 text-sky-800 text-xs">Jakarta</span>  
                     </div>  
-                    <button class="my-3 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700">Gabung</button>  
+                    <button class="my-3 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700" href="/activity"Gabung</button>  
                 </div>
                 <div class="flex flex-col h-auto w-80 bg-white rounded-xl">  
                     <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
@@ -114,7 +114,7 @@
                         <img class="h-5" src="{{ asset('images/icon/location.svg') }}" alt="">  
                         <span class="py-1 text-sky-800 text-xs">Jakarta</span>  
                     </div>  
-                    <button class="my-3 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700">Gabung</button>  
+                    <button class="my-3 mx-6 py-2 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700" >Gabung</button>  
                 </div>
             </div>
             <div class="flex justify-center items-center">
