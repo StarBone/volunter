@@ -151,9 +151,5 @@
                 </div>
             </div>
         </section>
-        {{-- <x-layout-footer/> --}}
-        <footer>
-            <h1 class="py-10 text-center text-white bg-slate-500">copyright 2024 Hasan Nasuha</h1>
-        </footer>
     </main>
 </x-app-layout>

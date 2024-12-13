@@ -1,4 +1,3 @@
-<!-- resources/views/components/footer.blade.php -->  
 <footer class="mx-20 h-[40rem]"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">  
     <div class="grid grid-cols-2">
@@ -26,7 +25,7 @@
             <h1 class="font-semibold">Subscribe</h1>
             <div class="mt-3 flex">
                 <input type="text" placeholder="Email Address" class="w-44 h-10 rounded-l -lg">
-                <button class="w-10 h-10 rounded-r-lg bg-sky-600 text-white"><i class="fa-solid fa-arrow-right"></i></button>
+                <button class="px-3 h-10 rounded-r-lg bg-sky-600 text-white"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
             <p class="mt-14 text-[13px]">Hello, we are ABC. trying to make an effort to put the right people for you to get the best results. Just insight</p>
         </div>
