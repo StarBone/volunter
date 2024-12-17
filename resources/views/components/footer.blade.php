@@ -1,4 +1,4 @@
-<footer class="mx-20 h-[40rem]"> 
+<footer class="mt-20 mx-20 h-[40rem]"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">  
     <div class="grid grid-cols-2">
         <div id="col-1" class="w-1/2 flex flex-col">

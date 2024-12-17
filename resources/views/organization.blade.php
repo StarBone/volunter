@@ -29,8 +29,8 @@
                             <span class="pl-1 text-sky-800 text-xs">Jakarta</span>  
                         </div>  
                         <div class="mt-2 flex flex-row items-center space-x-3">  
-                            <span class="p-2 bg-amber-100 text-yellow-700 text-xs rounded-lg">Lingkungan</span>   
-                            <span class="p-2 bg-amber-100 text-yellow-700 text-xs rounded-lg">Pendidikan</span>   
+                            <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Lingkungan</span>   
+                            <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Pendidikan</span>   
                         </div>  
                         <div class="my-3 flex items-center font-semibold text-blue-800">
                             <a href="#">Lihat Detail<i class="fa-solid fa-chevron-right pl-2"></i></a>
@@ -46,8 +46,8 @@
                             <span class="pl-1 text-sky-800 text-xs">Jakarta</span>  
                         </div>  
                         <div class="mt-2 flex flex-row items-center space-x-3">  
-                            <span class="p-2 bg-amber-100 text-yellow-700 text-xs rounded-lg">Lingkungan</span>   
-                            <span class="p-2 bg-amber-100 text-yellow-700 text-xs rounded-lg">Pendidikan</span>   
+                            <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Lingkungan</span>   
+                            <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Pendidikan</span>   
                         </div>  
                         <div class="my-3 flex items-center font-semibold text-blue-800">
                             <a href="#">Lihat Detail<i class="fa-solid fa-chevron-right pl-2"></i></a>
@@ -63,8 +63,8 @@
                             <span class="pl-1 text-sky-800 text-xs">Jakarta</span>  
                         </div>  
                         <div class="mt-2 flex flex-row items-center space-x-3">  
-                            <span class="p-2 bg-amber-100 text-yellow-700 text-xs rounded-lg">Lingkungan</span>   
-                            <span class="p-2 bg-amber-100 text-yellow-700 text-xs rounded-lg">Pendidikan</span>   
+                            <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Lingkungan</span>   
+                            <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Pendidikan</span>   
                         </div>  
                         <div class="my-3 flex items-center font-semibold text-blue-800">
                             <a href="#">Lihat Detail<i class="fa-solid fa-chevron-right pl-2"></i></a>
@@ -80,8 +80,8 @@
                             <span class="pl-1 text-sky-800 text-xs">Jakarta</span>  
                         </div>  
                         <div class="mt-2 flex flex-row items-center space-x-3">  
-                            <span class="p-2 bg-amber-100 text-yellow-700 text-xs rounded-lg">Lingkungan</span>   
-                            <span class="p-2 bg-amber-100 text-yellow-700 text-xs rounded-lg">Pendidikan</span>   
+                            <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Lingkungan</span>   
+                            <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Pendidikan</span>   
                         </div>  
                         <div class="my-3 flex items-center font-semibold text-blue-800">
                             <a href="#">Lihat Detail<i class="fa-solid fa-chevron-right pl-2"></i></a>
@@ -97,8 +97,8 @@
                             <span class="pl-1 text-sky-800 text-xs">Jakarta</span>  
                         </div>  
                         <div class="mt-2 flex flex-row items-center space-x-3">  
-                            <span class="p-2 bg-amber-100 text-yellow-700 text-xs rounded-lg">Lingkungan</span>   
-                            <span class="p-2 bg-amber-100 text-yellow-700 text-xs rounded-lg">Pendidikan</span>   
+                            <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Lingkungan</span>   
+                            <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Pendidikan</span>   
                         </div>  
                         <div class="my-3 flex items-center font-semibold text-blue-800">
                             <a href="#">Lihat Detail<i class="fa-solid fa-chevron-right pl-2"></i></a>
@@ -114,8 +114,8 @@
                             <span class="pl-1 text-sky-800 text-xs">Jakarta</span>  
                         </div>  
                         <div class="mt-2 flex flex-row items-center space-x-3">  
-                            <span class="p-2 bg-amber-100 text-yellow-700 text-xs rounded-lg">Lingkungan</span>   
-                            <span class="p-2 bg-amber-100 text-yellow-700 text-xs rounded-lg">Pendidikan</span>   
+                            <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Lingkungan</span>   
+                            <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Pendidikan</span>   
                         </div>  
                         <div class="my-3 flex items-center font-semibold text-blue-800">
                             <a href="#">Lihat Detail<i class="fa-solid fa-chevron-right pl-2"></i></a>
@@ -128,7 +128,4 @@
             </div>
         </div>  
     </main>  
-    <footer>
-        <h1 class="py-10 text-center text-white bg-slate-500">copyright 2024 Hasan Nasuha</h1>
-    </footer>
 </x-app-layout>
