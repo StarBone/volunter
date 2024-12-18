@@ -11,21 +11,21 @@
                 <span class="text-gray-400">Apa yang kami lakukan</span>  
             </div>  
             <div class="mt-4">  
-                <div class="h-96 p-2 bg-white border border-gray-200 rounded-lg ">  
+                <div class="h-96 p-2 bg-white rounded-lg ">  
                     <img class="h-full w-full object-cover rounded-lg" src="{{ asset('images/card/card-1-full.png') }}" alt="">  
                 </div>  
 
-                <div class="mt-6 p-6 bg-white border border-gray-200 rounded-lg ">  
+                <div class="mt-6 p-6 bg-white rounded-lg ">  
                     <h1 class="text-3xl font-semibold">Deskripsi</h1>  
                     <p class="mt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam fuga magni perferendis amet quaerat nisi quae est ab nulla placeat, excepturi ipsum laborum vero dolor provident! Commodi, minus numquam tenetur ad unde enim rem quae, nobis ea harum tempore vitae beatae molestiae quisquam. Officiis modi pariatur magni sapiente porro voluptatum numquam nisi omnis vitae qui, perferendis earum cupiditate reprehenderit? Tenetur mollitia illum, quae molestiae qui optio temporibus? Laudantium consequuntur, ad nihil dolores deleniti at delectus dolorum fuga minima natus? Totam rem iure veritatis nisi inventore. Necessitatibus beatae hic dolor adipisci veniam? Commodi laboriosam deserunt omnis, earum non iste rem accusantium.</p>  
                 </div>  
 
-                <div class="mt-6 p-6 bg-white border border-gray-200 rounded-lg ">  
+                <div class="mt-6 p-6 bg-white rounded-lg ">  
                     <h1 class="text-3xl font-semibold">Detail Aktivitas</h1>  
                     <p class="mt-5">Breafing akan dilakukan sebelum kegiatan berlangsung.</p>  
                 </div>  
 
-                <div class="mt-6 p-6 bg-white border border-gray-200 rounded-lg ">  
+                <div class="mt-6 p-6 bg-white rounded-lg ">  
                     <h1 class="text-3xl font-semibold">Pekerjaan Yang Dibuka</h1>   
                     <div class="mx-2 my-5 flex flex-col border border-neutral-200 rounded-[0.7rem]">  
                         <div class="flex justify-between items-center p-3">  
@@ -57,7 +57,7 @@
                     </div>
                 </div>
 
-                <div class="mt-6 p-6 bg-white border border-gray-200 rounded-lg ">  
+                <div class="mt-6 p-6 bg-white rounded-lg ">  
                     <h1 class="text-3xl font-semibold">Kategori</h1>  
                     <div class="mt-5 flex flex-row items-center space-x-3">  
                         <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Lingkungan</span>   
@@ -65,7 +65,7 @@
                     </div>  
                 </div>  
 
-                <div class="mt-6 p-6 bg-white border border-gray-200 rounded-lg ">  
+                <div class="mt-6 p-6 bg-white rounded-lg ">  
                     <h1 class="text-3xl font-semibold">Peserta (25)</h1>  
                     <div class="flex justify-between">
                         <div class="mt-3 p-3 w-1/6 text-center rounded-lg border border-neutral-200 hover:bg-sky-700 text-gray-500 hover:text-white">
@@ -99,7 +99,7 @@
                     </div>
                 </div>  
 
-                <div class="mt-6 p-6 bg-white border border-gray-200 rounded-lg ">  
+                <div class="mt-6 p-6 bg-white rounded-lg ">  
                     <h1 class="text-3xl font-semibold">Dokumentasi</h1>  
                     <div class="mt-5 grid grid-cols-2 gap-4">
                         <img class="w-auto h-auto object-cover aspect-video rounded-2xl" src="https://images.unsplash.com/photo-1616680214084-22670de1bc82?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
@@ -113,17 +113,16 @@
         
         <!-- Card Kanan -->  
         <aside class="mt-10 w-2/6 ml-4 sticky top-5">  
-            <div class="p-6 bg-white border border-gray-200 rounded-lg ">  
+            <div class="p-6 bg-white rounded-lg ">  
                 <h2 class="text-2xl font-semibold">Duta Semesta Batch</h2>  
-                <div class="p-5 grid grid-cols-2">
-                    <img class="row-span-4" src="{{ asset('images/icon/calender.svg') }}" alt="">  
-                    <h3 class="font-semibold">Periode Aktivitas</h3>
-                    <p>30 Hari</p>
-                    <h3 class="font-semibold">Periode Aktivitas</h3>
-                    <p>30 Hari</p>
-                    <img class="row-span-2" src="{{ asset('images/icon/location.svg') }}" alt="">
-                    <h3 class="font-semibold">Periode Aktivitas</h3>
-                    <p>30 Hari</p>
+                <div class="p-5 flex flex-col">
+                    <img class="w-6" src="{{ asset('images/icon/calender.svg') }}" alt="">
+                    <h3>Periode aktivitas</h3>
+                    <span>5 Januari 2025 - 29 Juni 2025</span>
+                    <h3>Jadwal aktivitas</h3>
+                    <span>Sabtu, 08:00 - 13:00 
+                        Minggu, 08:00 - 13:00</span>
+                    <img class="w-6" src="{{ asset('images/icon/location.svg') }}" alt="">
                 </div>
             </div>  
         </aside>  
