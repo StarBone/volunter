@@ -1,4 +1,4 @@
-<img class="absolute top-0 right-0 z-0" src="{{ asset('images/R1.png') }}" alt="">
+<img class="absolute top-0 right-0 z-0" src="{{ asset('images/shape/s-ad.png') }}" alt="">
 <x-app-layout>  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">  
     <section class="flex items-start mx-20">
@@ -10,7 +10,7 @@
                 <span>/</span>   
                 <span class="text-gray-400">Apa yang kami lakukan</span>  
             </div>  
-            <div class="mt-4">  
+            <div class="mt-4">
                 <div class="h-96 p-2 bg-white rounded-lg ">  
                     <img class="h-full w-full object-cover rounded-lg" src="{{ asset('images/card/card-1-full.png') }}" alt="">  
                 </div>  
@@ -113,18 +113,34 @@
         
         <!-- Card Kanan -->  
         <aside class="mt-10 w-2/6 ml-4 sticky top-5">  
-            <div class="p-6 bg-white rounded-lg ">  
+            <div class="p-6 relative bg-white rounded-lg ">  
                 <h2 class="text-2xl font-semibold">Duta Semesta Batch</h2>  
-                <div class="p-5 flex flex-col">
-                    <img class="w-6" src="{{ asset('images/icon/calender.svg') }}" alt="">
-                    <h3>Periode aktivitas</h3>
-                    <span>5 Januari 2025 - 29 Juni 2025</span>
-                    <h3>Jadwal aktivitas</h3>
-                    <span>Sabtu, 08:00 - 13:00 
-                        Minggu, 08:00 - 13:00</span>
-                    <img class="w-6" src="{{ asset('images/icon/location.svg') }}" alt="">
+                <div class="relative py-5 flex flex-col text-sm">
+                    <img class="w-6 absolute" src="{{ asset('images/icon/calender.svg') }}" alt="">
+                    <h3 class="ml-8">Periode Aktivitas</h3>
+                    <span class="ml-8 text-gray-500">5 Januari 2025 - 29 Juni 2025</span>
+                    <h3 class="ml-8 mt-2">Jadwal aktivitas</h3>
+                    <p class="ml-8 text-gray-500 leading-[20px]">Sabtu, 08:00 - 13:00<br>
+                        Minggu, 08:00 - 13:00</p>
+                    <img class="w-6 absolute bottom-[3.5rem]" src="{{ asset('images/icon/location.svg') }}" alt="">
+                    <p class="ml-8 mt-3 text-gray-500 leading-[20px]">JL. H. Sanyar, No.11, RT.15 RW.5, Penggilingan, Cakung, Jakarta Timur, 13940 Kota Administrasi Jakarta Timur, DKI Jakarta</p>
                 </div>
+                <div class="flex items-center text-sm">
+                    <div class="py-2 pl-2 pr-14 flex gap-1 bg-gray-200 rounded-lg">
+                        <img src="{{ asset('images/icon/guild.svg') }}" alt="">
+                        <span class=" text-sky-700 font-semibold">Rumah Belajar Duta Semesta</span>
+                    </div>
+                    <img class="ml-5" src="{{ asset('images/icon/bookmark.svg') }}" alt="">
+                </div>
+            </div>
+            <div class="p-6 mt-6 relative bg-white rounded-lg">  
+                <span class="text-xl">Ambil Langkah Sekarang</span> 
+                <div class="flex">
+                    <button class="mt-4 px-[4.8rem] py-3 bg-sky-700 text-white rounded-full">Gabung Relawan</button>
+                    <button class="mt-4 ml-3 p-3 bg-white border border-sky-700 text-sky-700 rounded-full"><img class="w-5" src="{{ asset('images/icon/messenger.svg') }}" alt=""></button>
+                </div> 
             </div>  
+
         </aside>  
     </section> 
 </x-app-layout>

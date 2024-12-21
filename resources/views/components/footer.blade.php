@@ -23,8 +23,8 @@
         <div id="col-2" class="w-1/5 flex flex-col justify-center">
             <h1 class="font-semibold">Subscribe</h1>
             <div class="mt-3 relative">
-                <input type="text" placeholder="Email Address" class="pr-12 w-full rounded-lg">
-                <button class="absolute right-0 p-[13px] rounded-lg bg-sky-600 text-white"><i class="fa-solid fa-arrow-right"></i></button>
+                <input type="text" placeholder="Email Address" class="pr-12 w-full rounded-xl">
+                <button class="absolute right-0 p-[13px] rounded-xl bg-sky-600 text-white"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
             <p class="mt-14 text-[13px]">Hello, we are ABC. trying to make an effort to put the right people for you to get the best results. Just insight</p>
         </div>
