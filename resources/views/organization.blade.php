@@ -112,7 +112,7 @@
                         <div class="mt-1 flex items-center">
                             <img class="h-5" src="{{ asset('images/icon/location.svg') }}" alt="">
                             <span class="pl-1 text-sky-800 text-xs">Jakarta</span>  
-                        </div>  
+                        </div>
                         <div class="mt-2 flex flex-row items-center space-x-3">  
                             <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Lingkungan</span>   
                             <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Pendidikan</span>   

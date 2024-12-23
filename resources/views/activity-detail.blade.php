@@ -116,7 +116,7 @@
             <div class="p-6 relative bg-white rounded-lg ">  
                 <h2 class="text-2xl font-semibold">Duta Semesta Batch</h2>  
                 <div class="relative py-5 flex flex-col text-sm">
-                    <img class="w-6 absolute" src="{{ asset('images/icon/calender.svg') }}" alt="">
+                    <svg class="w-5 absolute fill-sky-700" id="fi_2948088" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m446 40h-46v-24c0-8.836-7.163-16-16-16s-16 7.164-16 16v24h-224v-24c0-8.836-7.163-16-16-16s-16 7.164-16 16v24h-46c-36.393 0-66 29.607-66 66v340c0 36.393 29.607 66 66 66h380c36.393 0 66-29.607 66-66v-340c0-36.393-29.607-66-66-66zm-380 32h46v16c0 8.836 7.163 16 16 16s16-7.164 16-16v-16h224v16c0 8.836 7.163 16 16 16s16-7.164 16-16v-16h46c18.748 0 34 15.252 34 34v38h-448v-38c0-18.748 15.252-34 34-34zm380 408h-380c-18.748 0-34-15.252-34-34v-270h448v270c0 18.748-15.252 34-34 34z"></path></g></svg>
                     <h3 class="ml-8">Periode Aktivitas</h3>
                     <span class="ml-8 text-gray-500">5 Januari 2025 - 29 Juni 2025</span>
                     <h3 class="ml-8 mt-2">Jadwal aktivitas</h3>
@@ -133,14 +133,25 @@
                     <img class="ml-5" src="{{ asset('images/icon/bookmark.svg') }}" alt="">
                 </div>
             </div>
-            <div class="p-6 mt-6 relative bg-white rounded-lg">  
+            <div class="p-6 mt-4 relative bg-white rounded-lg">  
                 <span class="text-xl">Ambil Langkah Sekarang</span> 
                 <div class="flex">
                     <button class="mt-4 px-[4.8rem] py-3 bg-sky-700 text-white rounded-full">Gabung Relawan</button>
                     <button class="mt-4 ml-3 p-3 bg-white border border-sky-700 text-sky-700 rounded-full"><img class="w-5" src="{{ asset('images/icon/messenger.svg') }}" alt=""></button>
-                </div> 
-            </div>  
-
+                </div>
+                <div class="flex mt-2">
+                    <i class="fa-solid fa-circle-info pt-0.5 flex-none text-red-600"></i>
+                    <span class="text-sm pl-2 flex-1 text-red-600">Batas Registrasi : 13 Desember 2024</span>
+                </div>
+                <hr class="my-6">
+                <div class="flex gap-5 text-gray-500">
+                    <span>Bagikan :</span>
+                    <img src="{{ asset('images/icon/link.svg') }}" alt="">
+                    <img src="{{ asset('images/icon/fb.svg') }}" alt="">
+                    <img src="{{ asset('images/icon/instagram.svg') }}" alt="">
+                    <img src="{{ asset('images/icon/in.svg') }}" alt="">
+                </div>
+            </div>
         </aside>  
     </section> 
 </x-app-layout>

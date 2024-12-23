@@ -23,8 +23,8 @@
                 <div class="flex flex-col h-auto w-80 bg-white rounded-xl">  
                     <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
                     <h1 class="mt-3 px-5 text-lg text-start font-semibold">Duta Semesta Batch 2</h1>   
-                    <p class="mt-2 px-5 text-xs text-start">  
-                        {{ \Illuminate\Support\Str::limit('Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan', 70, '...') }}  
+                    <p class="mt-2 px-5 text-xs text-start line-clamp-2">
+                        Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan
                     </p>  
                     <span class="px-5 mt-2 text-xs">Bersama : Rumah Belajar</span>  
                     <div class="mt-2 flex flex-row items-center">  
@@ -39,9 +39,9 @@
                 <div class="flex flex-col h-auto w-80 bg-white rounded-xl">  
                     <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
                     <h1 class="mt-3 px-5 text-lg text-start font-semibold">Duta Semesta Batch 2</h1>   
-                    <p class="mt-2 px-5 text-xs text-start">  
-                        {{ \Illuminate\Support\Str::limit('Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan', 70, '...') }}  
-                    </p>  
+                    <p class="mt-2 px-5 text-xs text-start line-clamp-2">
+                        Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan
+                    </p> 
                     <span class="px-5 mt-2 text-xs">Bersama : Rumah Belajar</span>  
                     <div class="mt-2 flex flex-row items-center">  
                         <img class="h-5 pl-5 pr-1" src="{{ asset('images/icon/calender.svg') }}" alt="">  
@@ -55,9 +55,9 @@
                 <div class="flex flex-col h-auto w-80 bg-white rounded-xl">  
                     <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
                     <h1 class="mt-3 px-5 text-lg text-start font-semibold">Duta Semesta Batch 2</h1>   
-                    <p class="mt-2 px-5 text-xs text-start">  
-                        {{ \Illuminate\Support\Str::limit('Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan', 70, '...') }}  
-                    </p>  
+                    <p class="mt-2 px-5 text-xs text-start line-clamp-2">
+                        Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan
+                    </p> 
                     <span class="px-5 mt-2 text-xs">Bersama : Rumah Belajar</span>  
                     <div class="mt-2 flex flex-row items-center">  
                         <img class="h-5 pl-5 pr-1" src="{{ asset('images/icon/calender.svg') }}" alt="">  
@@ -71,9 +71,9 @@
                 <div class="flex flex-col h-auto w-80 bg-white rounded-xl">  
                     <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
                     <h1 class="mt-3 px-5 text-lg text-start font-semibold">Duta Semesta Batch 2</h1>   
-                    <p class="mt-2 px-5 text-xs text-start">  
-                        {{ \Illuminate\Support\Str::limit('Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan', 70, '...') }}  
-                    </p>  
+                    <p class="mt-2 px-5 text-xs text-start line-clamp-2">
+                        Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan
+                    </p> 
                     <span class="px-5 mt-2 text-xs">Bersama : Rumah Belajar</span>  
                     <div class="mt-2 flex flex-row items-center">  
                         <img class="h-5 pl-5 pr-1" src="{{ asset('images/icon/calender.svg') }}" alt="">  
@@ -87,9 +87,9 @@
                 <div class="flex flex-col h-auto w-80 bg-white rounded-xl">  
                     <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
                     <h1 class="mt-3 px-5 text-lg text-start font-semibold">Duta Semesta Batch 2</h1>   
-                    <p class="mt-2 px-5 text-xs text-start">  
-                        {{ \Illuminate\Support\Str::limit('Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan', 70, '...') }}  
-                    </p>  
+                    <p class="mt-2 px-5 text-xs text-start line-clamp-2">
+                        Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan
+                    </p> 
                     <span class="px-5 mt-2 text-xs">Bersama : Rumah Belajar</span>  
                     <div class="mt-2 flex flex-row items-center">  
                         <img class="h-5 pl-5 pr-1" src="{{ asset('images/icon/calender.svg') }}" alt="">  
@@ -103,9 +103,9 @@
                 <div class="flex flex-col h-auto w-80 bg-white rounded-xl">  
                     <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
                     <h1 class="mt-3 px-5 text-lg text-start font-semibold">Duta Semesta Batch 2</h1>   
-                    <p class="mt-2 px-5 text-xs text-start">  
-                        {{ \Illuminate\Support\Str::limit('Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan', 70, '...') }}  
-                    </p>  
+                    <p class="mt-2 px-5 text-xs text-start line-clamp-2">
+                        Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan
+                    </p> 
                     <span class="px-5 mt-2 text-xs">Bersama : Rumah Belajar</span>  
                     <div class="mt-2 flex flex-row items-center">  
                         <img class="h-5 pl-5 pr-1" src="{{ asset('images/icon/calender.svg') }}" alt="">  
