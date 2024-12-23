@@ -116,13 +116,16 @@
             <div class="p-6 relative bg-white rounded-lg ">  
                 <h2 class="text-2xl font-semibold">Duta Semesta Batch</h2>  
                 <div class="relative py-5 flex flex-col text-sm">
-                    <svg class="w-5 absolute fill-sky-700" id="fi_2948088" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m446 40h-46v-24c0-8.836-7.163-16-16-16s-16 7.164-16 16v24h-224v-24c0-8.836-7.163-16-16-16s-16 7.164-16 16v24h-46c-36.393 0-66 29.607-66 66v340c0 36.393 29.607 66 66 66h380c36.393 0 66-29.607 66-66v-340c0-36.393-29.607-66-66-66zm-380 32h46v16c0 8.836 7.163 16 16 16s16-7.164 16-16v-16h224v16c0 8.836 7.163 16 16 16s16-7.164 16-16v-16h46c18.748 0 34 15.252 34 34v38h-448v-38c0-18.748 15.252-34 34-34zm380 408h-380c-18.748 0-34-15.252-34-34v-270h448v270c0 18.748-15.252 34-34 34z"></path></g></svg>
+                    <svg class="w-5 absolute fill-gray-500" id="fi_2948088" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m446 40h-46v-24c0-8.836-7.163-16-16-16s-16 7.164-16 16v24h-224v-24c0-8.836-7.163-16-16-16s-16 7.164-16 16v24h-46c-36.393 0-66 29.607-66 66v340c0 36.393 29.607 66 66 66h380c36.393 0 66-29.607 66-66v-340c0-36.393-29.607-66-66-66zm-380 32h46v16c0 8.836 7.163 16 16 16s16-7.164 16-16v-16h224v16c0 8.836 7.163 16 16 16s16-7.164 16-16v-16h46c18.748 0 34 15.252 34 34v38h-448v-38c0-18.748 15.252-34 34-34zm380 408h-380c-18.748 0-34-15.252-34-34v-270h448v270c0 18.748-15.252 34-34 34z"></path></g></svg>
                     <h3 class="ml-8">Periode Aktivitas</h3>
                     <span class="ml-8 text-gray-500">5 Januari 2025 - 29 Juni 2025</span>
                     <h3 class="ml-8 mt-2">Jadwal aktivitas</h3>
                     <p class="ml-8 text-gray-500 leading-[20px]">Sabtu, 08:00 - 13:00<br>
                         Minggu, 08:00 - 13:00</p>
-                    <img class="w-6 absolute bottom-[3.5rem]" src="{{ asset('images/icon/location.svg') }}" alt="">
+                    <svg class="w-5 absolute top-[140px] fill-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">  
+                        <path d="M409.124,63.426C368.224,22.525,313.843,0,256.001,0S143.777,22.525,102.877,63.426c-40.901,40.902-63.426,95.282-63.426,153.123c0,117.012,110.638,214.337,170.077,266.623c8.26,7.266,15.393,13.541,21.076,18.849c7.12,6.651,16.259,9.977,25.396,9.977c9.139,0,18.276-3.326,25.397-9.977c5.683-5.309,12.816-11.583,21.076-18.849c59.439-52.287,170.077-149.611,170.077-266.623C472.549,158.708,450.025,104.328,409.124,63.426z M282.663,460.654c-8.441,7.425-15.73,13.838-21.74,19.451c-2.761,2.577-7.085,2.578-9.847,0c-6.009-5.615-13.299-12.027-21.74-19.452c-55.88-49.155-159.895-140.654-159.895-244.103c0-102.868,83.689-186.557,186.558-186.557c102.868,0,186.557,83.689,186.557,186.557C442.557,319.999,338.543,411.498,282.663,460.654z"/>  
+                        <path d="M256.001,112.938c-52.621,0-95.431,42.809-95.431,95.43s42.81,95.43,95.431,95.43s95.43-42.809,95.43-95.43S308.622,112.938,256.001,112.938z M256.001,273.805c-36.083,0-65.439-29.356-65.439-65.438s29.356-65.438,65.439-65.438s65.438,29.356,65.438,65.438S292.084,273.805,256.001,273.805z"/>  
+                    </svg>
                     <p class="ml-8 mt-3 text-gray-500 leading-[20px]">JL. H. Sanyar, No.11, RT.15 RW.5, Penggilingan, Cakung, Jakarta Timur, 13940 Kota Administrasi Jakarta Timur, DKI Jakarta</p>
                 </div>
                 <div class="flex items-center text-sm">
@@ -136,7 +139,7 @@
             <div class="p-6 mt-4 relative bg-white rounded-lg">  
                 <span class="text-xl">Ambil Langkah Sekarang</span> 
                 <div class="flex">
-                    <button class="mt-4 px-[4.8rem] py-3 bg-sky-700 text-white rounded-full">Gabung Relawan</button>
+                    <button class="mt-4 px-[4.8rem] py-3 bg-sky-700 text-white rounded-full" data-modal-target="#relawan-modal" data-modal-toggle="relawan-modal">Gabung Relawan</button>
                     <button class="mt-4 ml-3 p-3 bg-white border border-sky-700 text-sky-700 rounded-full"><img class="w-5" src="{{ asset('images/icon/messenger.svg') }}" alt=""></button>
                 </div>
                 <div class="flex mt-2">
@@ -154,4 +157,21 @@
             </div>
         </aside>  
     </section> 
+    @include('auth.modal.gabung-relawan')
 </x-app-layout>
+<script>  
+    document.addEventListener('DOMContentLoaded', function () {  
+        const modalToggle = document.querySelectorAll('[data-modal-toggle]');  
+        
+        modalToggle.forEach(toggle => {  
+            toggle.addEventListener('click', function() {  
+                const modalId = toggle.getAttribute('data-modal-toggle');  
+                const modal = document.querySelector(modalId);  
+    
+                if (modal) {  
+                    modal.classList.toggle('hidden');  
+                }  
+            });  
+        });  
+    });  
+    </script>
