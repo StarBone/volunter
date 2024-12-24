@@ -1,4 +1,4 @@
-<?php
+<?php  
 
 use App\Http\Controllers\AboutController;  
 use App\Http\Controllers\Activity\ActivityController;  
@@ -12,6 +12,11 @@ use Illuminate\Support\Facades\Route;
 
 // User  
 Route::get('/', [HomeController::class, 'index'])->name('home');  
+
+// Redirect /home to /  
+Route::get('/home', function () {  
+    return redirect()->route('home');  
+})->name('home.redirect');  
 
 Route::get('/about', [AboutController::class, 'index'])->name('about');  
 

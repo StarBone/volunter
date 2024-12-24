@@ -10,8 +10,8 @@
                 <span>/</span>  
                 <a class="text-blue-800 underline underline-offset-[3px]" href="/activity/search">Aktivitas</a>  
                 <span>/</span>   
-                <span class="text-gray-400">Apa yang kami lakukan</span>  
-            </div>  
+                <span class="text-gray-400">Apa yang kami lakukan</span>
+            </div>
             <div class="mt-4">
                 <div class="h-96 p-2 bg-white rounded-lg ">  
                     <img class="h-full w-full object-cover rounded-lg" src="{{ asset('images/card/card-1-full.png') }}" alt="">  
@@ -131,9 +131,9 @@
                     <p class="ml-8 mt-3 text-gray-500 leading-[20px]">JL. H. Sanyar, No.11, RT.15 RW.5, Penggilingan, Cakung, Jakarta Timur, 13940 Kota Administrasi Jakarta Timur, DKI Jakarta</p>
                 </div>
                 <div class="flex items-center text-sm">
-                    <div class="py-2 pl-2 pr-14 flex gap-1 bg-gray-200 rounded-lg">
-                        <img src="{{ asset('images/icon/guild.svg') }}" alt="">
-                        <span class=" text-sky-700 font-semibold">Rumah Belajar Duta Semesta</span>
+                    <div class="h-10 w-[80%] flex gap-1 bg-gray-200 rounded-lg">
+                        <img class="ml-2 w-6" src="{{ asset('images/icon/guild.svg') }}" alt="">
+                        <span class="mt-2 text-sky-700 font-semibold">Rumah Belajar Duta Semesta</span>
                     </div>
                     <img class="ml-5" src="{{ asset('images/icon/bookmark.svg') }}" alt="">
                 </div>
@@ -141,8 +141,8 @@
             <div class="p-6 mt-4 relative bg-white rounded-lg">  
                 <span class="text-xl">Ambil Langkah Sekarang</span> 
                 <div class="flex">
-                    <button class="mt-4 px-[4.8rem] py-3 bg-sky-700 text-white rounded-full" data-modal-toggle="relawan-modal">Gabung Relawan</button>
-                    <button class="mt-4 ml-3 p-3 bg-white border border-sky-700 text-sky-700 rounded-full"><img class="w-5" src="{{ asset('images/icon/messenger.svg') }}" alt=""></button>
+                    <button class="mt-4 mr-2 h-12 w-[80%] bg-sky-700 text-white rounded-full" data-modal-toggle="relawan-modal" data-modal-target="#relawan-modal">Gabung Relawan</button>
+                    <a class="mt-4 p-3 border border-sky-700 rounded-full" href="#"><img src="{{ asset('images/icon/messenger.svg') }}" alt=""></a>
                    
                 </div>
                 <div class="flex mt-2">
