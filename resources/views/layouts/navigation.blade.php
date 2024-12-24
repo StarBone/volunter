@@ -1,4 +1,4 @@
-<nav x-data="{ open: false, dropdownOpen: false }" class="relative bg-white w-[97%] shadow-md rounded-2xl mt-3 mb-4 mx-auto z-50">  
+<nav x-data="{ open: false, dropdownOpen: false }" class="relative bg-white w-[97%] shadow-md rounded-2xl mt-3 mb-4 mx-auto z-30">  
     <!-- Primary Navigation Menu -->  
     <div class="px-4 sm:px-6 lg:px-2">  
         <div class="flex justify-between h-14 w-auto">  

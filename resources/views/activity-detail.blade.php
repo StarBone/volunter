@@ -1,3 +1,5 @@
+<link href="https://cdn.jsdelivr.net/npm/flowbite@1.6.5/dist/flowbite.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/flowbite@1.6.5/dist/flowbite.min.js"></script>
 <img class="absolute top-0 right-0 z-0" src="{{ asset('images/shape/s-ad.png') }}" alt="">
 <x-app-layout>  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">  
@@ -139,8 +141,9 @@
             <div class="p-6 mt-4 relative bg-white rounded-lg">  
                 <span class="text-xl">Ambil Langkah Sekarang</span> 
                 <div class="flex">
-                    <button class="mt-4 px-[4.8rem] py-3 bg-sky-700 text-white rounded-full" data-modal-target="#relawan-modal" data-modal-toggle="relawan-modal">Gabung Relawan</button>
+                    <button class="mt-4 px-[4.8rem] py-3 bg-sky-700 text-white rounded-full" data-modal-toggle="relawan-modal">Gabung Relawan</button>
                     <button class="mt-4 ml-3 p-3 bg-white border border-sky-700 text-sky-700 rounded-full"><img class="w-5" src="{{ asset('images/icon/messenger.svg') }}" alt=""></button>
+                   
                 </div>
                 <div class="flex mt-2">
                     <i class="fa-solid fa-circle-info pt-0.5 flex-none text-red-600"></i>
@@ -157,21 +160,4 @@
             </div>
         </aside>  
     </section> 
-    @include('auth.modal.gabung-relawan')
 </x-app-layout>
-<script>  
-    document.addEventListener('DOMContentLoaded', function () {  
-        const modalToggle = document.querySelectorAll('[data-modal-toggle]');  
-        
-        modalToggle.forEach(toggle => {  
-            toggle.addEventListener('click', function() {  
-                const modalId = toggle.getAttribute('data-modal-toggle');  
-                const modal = document.querySelector(modalId);  
-    
-                if (modal) {  
-                    modal.classList.toggle('hidden');  
-                }  
-            });  
-        });  
-    });  
-    </script>
