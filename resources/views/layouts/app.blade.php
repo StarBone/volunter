@@ -18,23 +18,23 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-jakarta bg-slate-50">
-            @include('layouts.navigation')
+        @include('layouts.navigation')
 
-            <!-- Page Heading -->
-            @isset($header)
-                <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endisset
+        <!-- Page Heading -->
+        @isset($header)
+            <header class="bg-white shadow">
+                <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+                    {{ $header }}
+                </div>
+            </header>
+        @endisset
 
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
-            @include('auth.modal.gabung-relawan')
-            @include('auth.modal.success')
-            @include('components.footer')
-        </body>
+        <!-- Page Content -->
+        <main>
+            {{ $slot }}
+        </main>
+        @include('auth.modal.gabung-relawan')
+        @include('auth.modal.success')
+        @include('components.footer')
+    </body>
 </html>
