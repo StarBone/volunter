@@ -6,7 +6,8 @@ use App\Http\Controllers\ActivityDetailController;
 use App\Http\Controllers\HomeController;  
 use App\Http\Controllers\OrganizationController;  
 use App\Http\Controllers\OrganizationDetailController;  
-use App\Http\Controllers\ProfileController;  
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\StatusController;
 use App\Http\Controllers\TesController;  
 use Illuminate\Support\Facades\Route;  
 
@@ -30,7 +31,9 @@ Route::get('/activity', [ActivityDetailController::class, 'index'])->name('activ
 Route::get('/organization/search', [OrganizationController::class, 'index'])->name('organization.search'); // Ubah di sini  
 
 // ** Ubah nama rute untuk detail organisasi **  
-Route::get('/organization', [OrganizationDetailController::class, 'index'])->name('organization.detail'); // Sesuaikan nama rute  
+Route::get('/organization', [OrganizationDetailController::class, 'index'])->name('organization.detail'); // Sesuaikan nama rute 
+
+Route::get('/status', [StatusController::class, 'index'])->name('status'); // Sesuaikan nama rute 
 
 Route::get('/tes', [TesController::class, 'index'])->name('tes');  
 
