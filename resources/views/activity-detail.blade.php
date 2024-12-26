@@ -141,7 +141,7 @@
             <div class="p-6 mt-4 relative bg-white rounded-lg">  
                 <span class="text-xl">Ambil Langkah Sekarang</span> 
                 <div class="flex">
-                    <button class="mt-4 mr-2 h-12 w-[80%] bg-sky-700 text-white rounded-full" data-modal-toggle="relawan-modal" data-modal-target="#relawan-modal">Gabung Relawan</button>
+                    <button class="mt-4 mr-2 h-12 w-[80%] bg-sky-700 text-white rounded-full" data-modal-target="relawanModal" data-modal-toggle="relawanModal">Gabung Relawan</button>
                     <a class="mt-4 p-3 border border-sky-700 rounded-full" href="#"><img src="{{ asset('images/icon/messenger.svg') }}" alt=""></a>
                    
                 </div>
