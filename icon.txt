@@ -1,52 +1,22 @@
-calender:
-<svg class="w-4 fill-sky-700" id="fi_2948088" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m446 40h-46v-24c0-8.836-7.163-16-16-16s-16 7.164-16 16v24h-224v-24c0-8.836-7.163-16-16-16s-16 7.164-16 16v24h-46c-36.393 0-66 29.607-66 66v340c0 36.393 29.607 66 66 66h380c36.393 0 66-29.607 66-66v-340c0-36.393-29.607-66-66-66zm-380 32h46v16c0 8.836 7.163 16 16 16s16-7.164 16-16v-16h224v16c0 8.836 7.163 16 16 16s16-7.164 16-16v-16h46c18.748 0 34 15.252 34 34v38h-448v-38c0-18.748 15.252-34 34-34zm380 408h-380c-18.748 0-34-15.252-34-34v-270h448v270c0 18.748-15.252 34-34 34z"></path></g></svg>
-location:
-<svg class="w-4 fill-sky-700" version="1.1" id="fi_1008001" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 5   11.999 511.999;" xml:space="preserve">
-                                        <g>
-                                            <g>
-                                                <path d="M409.124,63.426C368.224,22.525,313.843,0,256.001,0S143.777,22.525,102.877,63.426
-                                                    c-40.901,40.902-63.426,95.282-63.426,153.123c0,117.012,110.638,214.337,170.077,266.623c8.26,7.266,15.393,13.541,21.076,18.849
-                                                    c7.12,6.651,16.259,9.977,25.396,9.977c9.139,0,18.276-3.326,25.397-9.977c5.683-5.309,12.816-11.583,21.076-18.849
-                                                    c59.439-52.287,170.077-149.611,170.077-266.623C472.549,158.708,450.025,104.328,409.124,63.426z M282.663,460.654
-                                                    c-8.441,7.425-15.73,13.838-21.74,19.451c-2.761,2.577-7.085,2.578-9.847,0c-6.009-5.615-13.299-12.027-21.74-19.452
-                                                    c-55.88-49.155-159.895-140.654-159.895-244.103c0-102.868,83.689-186.557,186.558-186.557
-                                                    c102.868,0,186.557,83.689,186.557,186.557C442.557,319.999,338.543,411.498,282.663,460.654z"></path>
-                                            </g>
-                                        </g>
-                                        <g>
-                                            <g>
-                                                <path d="M256.001,112.938c-52.621,0-95.431,42.809-95.431,95.43s42.81,95.43,95.431,95.43s95.43-42.809,95.43-95.43
-                                                    S308.622,112.938,256.001,112.938z M256.001,273.805c-36.083,0-65.439-29.356-65.439-65.438s29.356-65.438,65.439-65.438
-                                                    s65.438,29.356,65.438,65.438S292.084,273.805,256.001,273.805z"></path>
-                                            </g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g>
-                                        <g>
-                                        </g></svg>
+                    {{-- <div class="col-span-2">  
+                        <label for="phone" class="block mb-2 text-sm font-medium text-gray-900">No Telepon</label>  
+                        <input type="number" name="phone" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" placeholder="+62xxxxxxxxx" required="">  
+                    </div>  
+                    <div class="col-span-2">  
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email</label>  
+                        <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" placeholder="johndoe@gmail.com" required="">  
+                    </div>  
+                    <div class="col-span-2">  
+                        <label for="kategori_pekerjaan" class="block mb-2 text-sm font-medium text-gray-900">Pekerjaan</label>  
+                        <select id="kategori_pekerjaan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">  
+                            <option selected="">Pilih Pekerjaan</option>  
+                            <option value="TV">TV/Monitors</option>  
+                            <option value="PC">PC</option>  
+                            <option value="GA">Gaming/Console</option>  
+                            <option value="PH">Phones</option>  
+                        </select>  
+                    </div>  
+                    <div class="col-span-2">  
+                        <label for="reason_join" class="block mb-2 text-sm font-medium text-gray-900">Mengapa Anda ingin bergabung untuk aktivitas ini?</label>  
+                        <textarea id="reason_join" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Isi detail alasan"></textarea>                    
+                    </div>   --}}

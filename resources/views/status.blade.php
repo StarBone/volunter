@@ -65,11 +65,9 @@
                         <button class="py-2 px-5 border border-neutral-200 rounded-full text-md">Diterima</button>
                         <button class="py-2 px-5 border border-neutral-200 rounded-full text-md">Sedang Berlangsung</button>
                     </div>
-                    <div class="m-3 flex items-center border border-gray-400 rounded-full">  
-                        <input type="text" class="ml-2 h-6 w-auto bg-gray-100 focus:outline-none focus:ring-0 border-none" placeholder="Cari Aktivitas">  
-                        <div class="px-3 py-2">  
-                            <i class="fa-solid fa-magnifying-glass text-gray-400"></i>  
-                        </div>
+                    <div class="relative">
+                        <input type="text" class="ml-2 h-6 w-auto bg-gray-100 focus:outline-none focus:ring-0 border-none pl-8" placeholder="Cari Aktivitas">
+                        <i class="fa-solid fa-magnifying-glass text-gray-400 absolute left-3 top-1/2 transform -translate-y-1/2"></i>
                     </div>
                     <div class="mx-2 my-5 flex flex-col border border-neutral-200 rounded-[0.7rem]">  
                         <div class="flex items-center p-3 gap-3">  

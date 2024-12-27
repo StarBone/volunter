@@ -6,7 +6,7 @@
     <section class="flex items-start mx-20">
         <div class="relative w-4/6 flex-grow"> 
             <div class="ml-4 flex space-x-2">  
-                <img src="{{ asset('images/icon/home.svg') }}" alt="">  
+                <img src="{{ asset('images/icon/home.svg') }}" alt=""> 
                 <span>/</span>  
                 <a class="text-blue-800 underline underline-offset-[3px]" href="/activity/search">Aktivitas</a>  
                 <span>/</span>   
