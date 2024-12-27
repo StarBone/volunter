@@ -143,7 +143,6 @@
                 <div class="flex">
                     <button class="mt-4 mr-2 h-12 w-[80%] bg-sky-700 text-white rounded-full" data-modal-target="relawanModal" data-modal-toggle="relawanModal">Gabung Relawan</button>
                     <a class="mt-4 p-3 border border-sky-700 rounded-full" href="#"><img src="{{ asset('images/icon/messenger.svg') }}" alt=""></a>
-                   
                 </div>
                 <div class="flex mt-2">
                     <i class="fa-solid fa-circle-info pt-0.5 flex-none text-red-600"></i>
