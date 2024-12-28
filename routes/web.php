@@ -8,6 +8,7 @@ use App\Http\Controllers\OrganizationController;
 use App\Http\Controllers\OrganizationDetailController;  
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StatusMyActivityController;
+use App\Http\Controllers\StatusTestimony;
 use App\Http\Controllers\TesController;  
 use Illuminate\Support\Facades\Route;  
 
@@ -35,7 +36,7 @@ Route::get('/organization', [OrganizationDetailController::class, 'index'])->nam
 
 Route::get('/status/my-activity', [StatusMyActivityController::class, 'index'])->name('status.my-activity');
 
-Route::get('/status/my-activity', [StatusMyActivityController::class, 'index'])->name('status.my-activity');
+Route::get('/status/testinomy', [StatusTestimony::class, 'index'])->name('status.testimony');
 
 Route::get('/status/my-activity', [StatusMyActivityController::class, 'index'])->name('status.my-activity');
 
