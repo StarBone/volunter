@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class StatusController extends Controller
+class StatusMyActivityController extends Controller
 {
     public function index()
     {
-        return view('status');
+        return view('statusMy-activity');
     }
 }

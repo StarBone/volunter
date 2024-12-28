@@ -65,15 +65,19 @@
                         <button class="py-2 px-5 border border-neutral-200 rounded-full text-md">Diterima</button>
                         <button class="py-2 px-5 border border-neutral-200 rounded-full text-md">Sedang Berlangsung</button>
                     </div>
-                    <div class="mt-5 flex items-center">
+                    <div class="mt-5 flex items-center gap-3">
                         <div class="p-px relative bg-neutral-200 rounded-full">
                             <input type="text" class="h-9 w-60 focus:outline-none focus:ring-0 border-none rounded-full" placeholder="Cari Aktivitas">
                             <i class="fa-solid fa-magnifying-glass text-xl text-gray-400 absolute right-4 top-1/2 transform -translate-y-1/2"></i>
                         </div>
-                        <div class="h-3 w-0.5 bg-slate-600"></div>
+                        <div class="h-5 w-px bg-neutral-200"></div>
+                        <button class="flex items-center border border-neutral-200 rounded-full">  
+                            <h1 class="pl-5 py-1.5 text-gray-500">Terbaru</h1>
+                            <i class="fa-solid fa-chevron-down pl-2 pr-5 text-gray-500"></i>
+                        </button>
                     </div>
                     <div class="mx-2 my-5 flex flex-col border border-neutral-200 rounded-[0.7rem]">  
-                        <div class="flex items-center p-3 gap-3">  
+                        <div class="flex items-center p-3 gap-3">
                             <div class="flex items-center gap-1">
                                 <img class="ml-2 w-4" src="{{ asset('images/icon/guild.svg') }}" alt="">
                                 <span class="text-sky-700 text-xs font-semibold">Rumah Belajar Duta Semesta</span>
