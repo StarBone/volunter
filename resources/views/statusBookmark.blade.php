@@ -66,31 +66,111 @@
                         </div>
                     </div>
                     <div class="my-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">  
-                        <div class="flex flex-col h-auto w-[14rem] bg-white border border-neutral-200 rounded-xl">
-                            <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
-                            <h1 class="mt-3 px-5 text-lg text-start font-semibold truncate">Duta Semesta Batch 2</h1>
-                            <p class="mt-2 px-5 text-xs text-start line-clamp-2">  
-                                Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan  
-                            </p>
-                            <div class="mt-2 mx-5 flex flex-row items-center gap-1">   
-                                <svg class="w-4 fill-sky-700" id="fi_2948088" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m446 40h-46v-24c0-8.836-7.163-16-16-16s-16 7.164-16 16v24h-224v-24c0-8.836-7.163-16-16-16s-16 7.164-16 16v24h-46c-36.393 0-66 29.607-66 66v340c0 36.393 29.607 66 66 66h380c36.393 0 66-29.607 66-66v-340c0-36.393-29.607-66-66-66zm-380 32h46v16c0 8.836 7.163 16 16 16s16-7.164 16-16v-16h224v16c0 8.836 7.163 16 16 16s16-7.164 16-16v-16h46c18.748 0 34 15.252 34 34v38h-448v-38c0-18.748 15.252-34 34-34zm380 408h-380c-18.748 0-34-15.252-34-34v-270h448v270c0 18.748-15.252 34-34 34z"></path></g></svg>
-                                <span class="py-1 text-sky-800 text-[11px]">20 Mei 2023</span>  
-                                <div class="mx-2 size-2 rounded-full bg-gray-600"></div>  
-                                <svg class="w-4 fill-sky-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">  
-                                    <path d="M409.124,63.426C368.224,22.525,313.843,0,256.001,0S143.777,22.525,102.877,63.426c-40.901,40.902-63.426,95.282-63.426,153.123c0,117.012,110.638,214.337,170.077,266.623c8.26,7.266,15.393,13.541,21.076,18.849c7.12,6.651,16.259,9.977,25.396,9.977c9.139,0,18.276-3.326,25.397-9.977c5.683-5.309,12.816-11.583,21.076-18.849c59.439-52.287,170.077-149.611,170.077-266.623C472.549,158.708,450.025,104.328,409.124,63.426z M282.663,460.654c-8.441,7.425-15.73,13.838-21.74,19.451c-2.761,2.577-7.085,2.578-9.847,0c-6.009-5.615-13.299-12.027-21.74-19.452c-55.88-49.155-159.895-140.654-159.895-244.103c0-102.868,83.689-186.557,186.558-186.557c102.868,0,186.557,83.689,186.557,186.557C442.557,319.999,338.543,411.498,282.663,460.654z"/>  
-                                    <path d="M256.001,112.938c-52.621,0-95.431,42.809-95.431,95.43s42.81,95.43,95.431,95.43s95.43-42.809,95.43-95.43S308.622,112.938,256.001,112.938z M256.001,273.805c-36.083,0-65.439-29.356-65.439-65.438s29.356-65.438,65.439-65.438s65.438,29.356,65.438,65.438S292.084,273.805,256.001,273.805z"/>  
-                                </svg>
-                                <span class="py-1 text-sky-800 text-[11px]">Jakarta</span>  
+                        <div class="p-1 w-52 flex flex-col border border-neutral-200 rounded-xl">  
+                            <img class="aspect-video rounded-xl object-cover" src="{{ asset('images/card/card-3.png') }}" alt="">
+                            <div class="p-2 flex flex-col">
+                                <span class="truncate text-sm">Konfrensi Pendidikan Indonesia shajhsjah</span>
+                                <p class="pr-1 pt-3 line-clamp-2 text-xs text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum aspernatur tempore eligendi officiis aliquam eum nam consectetur nesciunt laboriosam ad alias explicabo libero, sint in laudantium vitae? Commodi, veritatis dicta.</p>
+                                <div class="my-4 flex items-center">
+                                    <svg class="w-4 fill-sky-700" id="fi_2948088" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m446 40h-46v-24c0-8.836-7.163-16-16-16s-16 7.164-16 16v24h-224v-24c0-8.836-7.163-16-16-16s-16 7.164-16 16v24h-46c-36.393 0-66 29527-66 66v340c0 36.393 29.607 66 66 66h380c36.393 0 66-29.607 66-66v-340c0-36.393-29.607-66-66-66zm-380 32h46v16c0 8.836 7.163 16 16 16s16-7.164 16-16v-16h224v16c0 8.836 7.163 16 16 16s16-7.164 16-16v-16h46c18.748 0 34 15.252 34 34v38h-448v-38c0-18.748 15.252-34 34-34zm380 408h-380c-18.748 0-34-15.252-34-34v-270h448v270c0 18.748-15.252 34-34 34z"></path></g></svg>
+                                    <span class="pt-0.5 pl-1 text-[10px] text-sky-700">12 Desember 2024</span>
+                                    <div class="mt-[2px] mx-1 size-[5px] rounded-full bg-neutral-200"></div>
+                                    <svg class="w-4 fill-sky-700" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.999 511.999">
+                                        <path d="M409.124,63.426C368.224,22.525,313.843,0,256.001,0S143.777,22.525,102.877,63.426
+                                            c-40.901,40.902-63.426,95.282-63.426,153.123c0,117.012,110.638,214.337,170.077,266.623c8.26,7.266,15.393,13.541,21.076,18.849
+                                            c7.12,6.651,16.259,9.977,25.396,9.977c9.139,0,18.276-3.326,25.397-9.977c5.683-5.309,12.816-11.583,21.076-18.849
+                                            c59.439-52.287,170.077-149.611,170.077-266.623C472.549,158.708,450.025,104.328,409.124,63.426z M282.663,460.654
+                                            c-8.441,7.425-15.73,13.838-21.74,19.451c-2.761,2.577-7.085,2.578-9.847,0c-6.009-5.615-13.299-12.027-21.74-19.452
+                                            c-55.88-49.155-159.895-140.654-159.895-244.103c0-102.868,83.689-186.557,186.558-186.557
+                                            c102.868,0,186.557,83.689,186.557,186.557C442.557,319.999,338.543,411.498,282.663,460.654z"/>
+                                        <path d="M256.001,112.938c-52.621,0-95.431,42.809-95.431,95.43s42.81,95.43,95.431,95.43s95.43-42.809,95.43-95.43
+                                            S308.622,112.938,256.001,112.938z M256.001,273.805c-36.083,0-65.439-29.356-65.439-65.438s29.356-65.438,65.439-65.438
+                                            s65.438,29.356,65.438,65.438S292.084,273.805,256.001,273.805z"/>
+                                    </svg>                                    
+                                    <span class="pt-0.5 pl-1 text-[10px] text-sky-700">Jakarta</span>
+                                </div>
+                                <div class="flex items-center gap-7">
+                                    <button class="w-[70%] h-9 text-xs font-semibold border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700">Gabung</button>
+                                    <a href="#">
+                                        <svg class="w-4 fill-sky-700" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.045 212.045">
+                                            <path d="M167.871,0H44.84C34.82,0,26.022,8.243,26.022,18v182c0,3.266,0.909,5.988,2.374,8.091c1.752,2.514,4.573,3.955,7.598,3.954
+                                                c2.86,0,5.905-1.273,8.717-3.675l55.044-46.735c1.7-1.452,4.142-2.284,6.681-2.284c2.538,0,4.975,0.832,6.68,2.288l54.86,46.724
+                                                c2.822,2.409,5.657,3.683,8.512,3.683c4.828,0,9.534-3.724,9.534-12.045V18C186.022,8.243,177.891,0,167.871,0z"/>
+                                        </svg>    
+                                    </a>                      
+                                </div>
                             </div>
-                            <div class="flex items-center">
-                                <a class="my-3 mx-5 pt-2 h-9 w-[60%] text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700 text-center" href="/activity">Gabung</a>
-                                <svg class="w-4 fill-sky-700" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.045 212.045">
-                                    <path d="M167.871,0H44.84C34.82,0,26.022,8.243,26.022,18v182c0,3.266,0.909,5.988,2.374,8.091c1.752,2.514,4.573,3.955,7.598,3.954
-                                        c2.86,0,5.905-1.273,8.717-3.675l55.044-46.735c1.7-1.452,4.142-2.284,6.681-2.284c2.538,0,4.975,0.832,6.68,2.288l54.86,46.724
-                                        c2.822,2.409,5.657,3.683,8.512,3.683c4.828,0,9.534-3.724,9.534-12.045V18C186.022,8.243,177.891,0,167.871,0z"/>
-                                </svg>
-                            </div>  
-                        </div> {{-- Card --}}
+                        </div>  {{-- Card --}}
+                        <div class="p-1 w-52 flex flex-col border border-neutral-200 rounded-xl">  
+                            <img class="aspect-video rounded-xl object-cover" src="{{ asset('images/card/card-3.png') }}" alt="">
+                            <div class="p-2 flex flex-col">
+                                <span class="truncate text-sm">Konfrensi Pendidikan Indonesia shajhsjah</span>
+                                <p class="pr-1 pt-3 line-clamp-2 text-xs text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum aspernatur tempore eligendi officiis aliquam eum nam consectetur nesciunt laboriosam ad alias explicabo libero, sint in laudantium vitae? Commodi, veritatis dicta.</p>
+                                <div class="my-4 flex items-center">
+                                    <svg class="w-4 fill-sky-700" id="fi_2948088" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m446 40h-46v-24c0-8.836-7.163-16-16-16s-16 7.164-16 16v24h-224v-24c0-8.836-7.163-16-16-16s-16 7.164-16 16v24h-46c-36.393 0-66 29527-66 66v340c0 36.393 29.607 66 66 66h380c36.393 0 66-29.607 66-66v-340c0-36.393-29.607-66-66-66zm-380 32h46v16c0 8.836 7.163 16 16 16s16-7.164 16-16v-16h224v16c0 8.836 7.163 16 16 16s16-7.164 16-16v-16h46c18.748 0 34 15.252 34 34v38h-448v-38c0-18.748 15.252-34 34-34zm380 408h-380c-18.748 0-34-15.252-34-34v-270h448v270c0 18.748-15.252 34-34 34z"></path></g></svg>
+                                    <span class="pt-0.5 pl-1 text-[10px] text-sky-700">12 Desember 2024</span>
+                                    <div class="mt-[2px] mx-1 size-[5px] rounded-full bg-neutral-200"></div>
+                                    <svg class="w-4 fill-sky-700" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.999 511.999">
+                                        <path d="M409.124,63.426C368.224,22.525,313.843,0,256.001,0S143.777,22.525,102.877,63.426
+                                            c-40.901,40.902-63.426,95.282-63.426,153.123c0,117.012,110.638,214.337,170.077,266.623c8.26,7.266,15.393,13.541,21.076,18.849
+                                            c7.12,6.651,16.259,9.977,25.396,9.977c9.139,0,18.276-3.326,25.397-9.977c5.683-5.309,12.816-11.583,21.076-18.849
+                                            c59.439-52.287,170.077-149.611,170.077-266.623C472.549,158.708,450.025,104.328,409.124,63.426z M282.663,460.654
+                                            c-8.441,7.425-15.73,13.838-21.74,19.451c-2.761,2.577-7.085,2.578-9.847,0c-6.009-5.615-13.299-12.027-21.74-19.452
+                                            c-55.88-49.155-159.895-140.654-159.895-244.103c0-102.868,83.689-186.557,186.558-186.557
+                                            c102.868,0,186.557,83.689,186.557,186.557C442.557,319.999,338.543,411.498,282.663,460.654z"/>
+                                        <path d="M256.001,112.938c-52.621,0-95.431,42.809-95.431,95.43s42.81,95.43,95.431,95.43s95.43-42.809,95.43-95.43
+                                            S308.622,112.938,256.001,112.938z M256.001,273.805c-36.083,0-65.439-29.356-65.439-65.438s29.356-65.438,65.439-65.438
+                                            s65.438,29.356,65.438,65.438S292.084,273.805,256.001,273.805z"/>
+                                    </svg>                                    
+                                    <span class="pt-0.5 pl-1 text-[10px] text-sky-700">Jakarta</span>
+                                </div>
+                                <div class="flex items-center gap-7">
+                                    <button class="w-[70%] h-9 text-xs font-semibold border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700">Gabung</button>
+                                    <a href="#">
+                                        <svg class="w-4 fill-sky-700" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.045 212.045">
+                                            <path d="M167.871,0H44.84C34.82,0,26.022,8.243,26.022,18v182c0,3.266,0.909,5.988,2.374,8.091c1.752,2.514,4.573,3.955,7.598,3.954
+                                                c2.86,0,5.905-1.273,8.717-3.675l55.044-46.735c1.7-1.452,4.142-2.284,6.681-2.284c2.538,0,4.975,0.832,6.68,2.288l54.86,46.724
+                                                c2.822,2.409,5.657,3.683,8.512,3.683c4.828,0,9.534-3.724,9.534-12.045V18C186.022,8.243,177.891,0,167.871,0z"/>
+                                        </svg>    
+                                    </a>                      
+                                </div>
+                            </div>
+                        </div>  {{-- Card --}}
+                        <div class="p-1 w-52 flex flex-col border border-neutral-200 rounded-xl">  
+                            <img class="aspect-video rounded-xl object-cover" src="{{ asset('images/card/card-3.png') }}" alt="">
+                            <div class="p-2 flex flex-col">
+                                <span class="truncate text-sm">Konfrensi Pendidikan Indonesia shajhsjah</span>
+                                <p class="pr-1 pt-3 line-clamp-2 text-xs text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum aspernatur tempore eligendi officiis aliquam eum nam consectetur nesciunt laboriosam ad alias explicabo libero, sint in laudantium vitae? Commodi, veritatis dicta.</p>
+                                <div class="my-4 flex items-center">
+                                    <svg class="w-4 fill-sky-700" id="fi_2948088" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m446 40h-46v-24c0-8.836-7.163-16-16-16s-16 7.164-16 16v24h-224v-24c0-8.836-7.163-16-16-16s-16 7.164-16 16v24h-46c-36.393 0-66 29527-66 66v340c0 36.393 29.607 66 66 66h380c36.393 0 66-29.607 66-66v-340c0-36.393-29.607-66-66-66zm-380 32h46v16c0 8.836 7.163 16 16 16s16-7.164 16-16v-16h224v16c0 8.836 7.163 16 16 16s16-7.164 16-16v-16h46c18.748 0 34 15.252 34 34v38h-448v-38c0-18.748 15.252-34 34-34zm380 408h-380c-18.748 0-34-15.252-34-34v-270h448v270c0 18.748-15.252 34-34 34z"></path></g></svg>
+                                    <span class="pt-0.5 pl-1 text-[10px] text-sky-700">12 Desember 2024</span>
+                                    <div class="mt-[2px] mx-1 size-[5px] rounded-full bg-neutral-200"></div>
+                                    <svg class="w-4 fill-sky-700" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.999 511.999">
+                                        <path d="M409.124,63.426C368.224,22.525,313.843,0,256.001,0S143.777,22.525,102.877,63.426
+                                            c-40.901,40.902-63.426,95.282-63.426,153.123c0,117.012,110.638,214.337,170.077,266.623c8.26,7.266,15.393,13.541,21.076,18.849
+                                            c7.12,6.651,16.259,9.977,25.396,9.977c9.139,0,18.276-3.326,25.397-9.977c5.683-5.309,12.816-11.583,21.076-18.849
+                                            c59.439-52.287,170.077-149.611,170.077-266.623C472.549,158.708,450.025,104.328,409.124,63.426z M282.663,460.654
+                                            c-8.441,7.425-15.73,13.838-21.74,19.451c-2.761,2.577-7.085,2.578-9.847,0c-6.009-5.615-13.299-12.027-21.74-19.452
+                                            c-55.88-49.155-159.895-140.654-159.895-244.103c0-102.868,83.689-186.557,186.558-186.557
+                                            c102.868,0,186.557,83.689,186.557,186.557C442.557,319.999,338.543,411.498,282.663,460.654z"/>
+                                        <path d="M256.001,112.938c-52.621,0-95.431,42.809-95.431,95.43s42.81,95.43,95.431,95.43s95.43-42.809,95.43-95.43
+                                            S308.622,112.938,256.001,112.938z M256.001,273.805c-36.083,0-65.439-29.356-65.439-65.438s29.356-65.438,65.439-65.438
+                                            s65.438,29.356,65.438,65.438S292.084,273.805,256.001,273.805z"/>
+                                    </svg>                                    
+                                    <span class="pt-0.5 pl-1 text-[10px] text-sky-700">Jakarta</span>
+                                </div>
+                                <div class="flex items-center gap-7">
+                                    <button class="w-[70%] h-9 text-xs font-semibold border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700">Gabung</button>
+                                    <a href="#">
+                                        <svg class="w-4 fill-sky-700" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.045 212.045">
+                                            <path d="M167.871,0H44.84C34.82,0,26.022,8.243,26.022,18v182c0,3.266,0.909,5.988,2.374,8.091c1.752,2.514,4.573,3.955,7.598,3.954
+                                                c2.86,0,5.905-1.273,8.717-3.675l55.044-46.735c1.7-1.452,4.142-2.284,6.681-2.284c2.538,0,4.975,0.832,6.68,2.288l54.86,46.724
+                                                c2.822,2.409,5.657,3.683,8.512,3.683c4.828,0,9.534-3.724,9.534-12.045V18C186.022,8.243,177.891,0,167.871,0z"/>
+                                        </svg>    
+                                    </a>                      
+                                </div>
+                            </div>
+                        </div>  {{-- Card --}}
                     </div>
                 </div>
             </div>
