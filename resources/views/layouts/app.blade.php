@@ -33,9 +33,9 @@
         <main>
             {{ $slot }}
         </main>
-        @include('auth.modal.gabungRelawan')
-        @include('auth.modal.successRelawan')
-        @include('auth.modal.successSertificate')
+        @include('auth.modal.formRelawan')
+        @include('auth.modal.success')
+        @include('auth.modal.warningSertificate')
         @include('components.footer')
     </body>
 </html>

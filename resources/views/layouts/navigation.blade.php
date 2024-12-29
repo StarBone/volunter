@@ -7,10 +7,10 @@
                 <div class="hidden sm:-my-px sm:ms-10 sm:flex space-x-5">  
                     <x-nav-link :href="route('activity.search')" :active="request()->routeIs('activity.search')">  
                         {{ __('Cari Aktivitas') }}  
-                    </x-nav-link>  
+                    </x-nav-link>
                     <x-nav-link :href="route('organization.search')" :active="request()->routeIs('organization.search')">  
                         {{ __('Cari Organisasi') }}  
-                    </x-nav-link>  
+                    </x-nav-link>
                 </div>  
             </div> 
             

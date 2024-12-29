@@ -39,11 +39,11 @@
                     <svg class="w-6 fill-sky-700" id="fi_3503786" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><g fill=""><path d="m13.1 1a10.927 10.927 0 0 0 -10.534 8.223l-.732-1.107a1 1 0 1 0 -1.668 1.1l2.2 3.334a1.084 1.084 0 0 0 .634.425 1.024 1.024 0 0 0 .756-.145l3.3-2.223a1 1 0 1 0 -1.115-1.659l-1.501 1.012a8.909 8.909 0 1 1 8.66 11.04 8.892 8.892 0 0 1 -7.281-3.822 1 1 0 1 0 -1.64 1.143 10.881 10.881 0 0 0 19.821-6.321 10.963 10.963 0 0 0 -10.9-11z"></path><path d="m13 5.95a1 1 0 0 0 -1 1v5.05a1.04 1.04 0 0 0 .293.707l3 3.027a1.013 1.013 0 0 0 1.414.007 1 1 0 0 0 .006-1.414l-2.713-2.738v-4.639a1 1 0 0 0 -1-1z"></path></g></svg>
                     <span class="text-sky-700 font-semibold">Aktivitas Saya</span>
                 </a>
-                <a href="/status/testinomy" class="py-4 px-5 flex items-center gap-5 bg-sky-100 border border-sky-700 rounded-xl">
+                <a href="/status/testinomy" class="py-4 px-5 flex items-center gap-5 hover:bg-sky-100 hover:border-sky-700 border border-transparent rounded-xl">
                     <svg class="w-6 fill-sky-700" enable-background="new 0 0 32 32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" id="fi_11213138"><g id="Grid" display="none"></g><g id="Webinar"></g><g id="Assignment"></g><g id="Article"></g><g id="Audi"></g><g id="Video_Tutorial"></g><g id="Discussion_1_"></g><g id="Resume"></g><g id="Trophy"></g><g id="Encyclopedia"></g><g id="Smartphone"></g><g id="Online_Lesson"></g><g id="Webpage"></g><g id="Search"></g><g id="Registration"></g><g id="Certificate_1_"></g><g id="Review"><path d="m20.03 14.084c0-.497-.403-.9-.9-.9h-9.9c-.497 0-.9.403-.9.9s.403.9.9.9h9.9c.497 0 .9-.403.9-.9z"></path><path d="m9.228 17.729c-.497 0-.9.403-.9.9s.403.9.9.9h5.249c.497 0 .9-.403.9-.9s-.403-.9-.9-.9z"></path><path d="m25.96 14.134c-.497 0-.9.403-.9.9v7.279c0 1.362-1.108 2.47-2.47 2.47h-6.02c-.195 0-.385.063-.541.181l-5.198 3.909c-.132.099-.256.058-.318.024-.063-.032-.167-.111-.163-.272l.1-2.91c.008-.244-.083-.481-.252-.656-.169-.176-.403-.275-.647-.275h-4.181c-1.362 0-2.47-1.107-2.47-2.47v-11.9c0-1.367 1.108-2.479 2.47-2.479h11.09c.497 0 .9-.403.9-.9s-.403-.9-.9-.9h-11.09c-2.354 0-4.27 1.92-4.27 4.28v11.899c0 2.354 1.916 4.271 4.27 4.271h3.249l-.068 1.982c-.024.814.409 1.554 1.132 1.929.309.161.642.24.972.24.443 0 .882-.143 1.256-.422l4.959-3.729h5.719c2.354 0 4.27-1.916 4.27-4.271v-7.279c.001-.498-.402-.901-.899-.901z"></path><path d="m30.825 5.561c-.163-.5-.564-.874-1.073-1l-2.3-.573-1.256-2.01c-.557-.894-2.011-.892-2.567 0l-1.256 2.01-2.3.573c-.509.126-.911.5-1.073 1s-.058 1.039.28 1.442l1.524 1.814-.166 2.364c-.037.524.195 1.021.62 1.33.264.192.574.291.888.291.191 0 .384-.037.569-.112l2.198-.888 2.197.888c.487.198 1.031.13 1.457-.178.425-.309.657-.806.621-1.331l-.166-2.364 1.524-1.815c.337-.402.442-.941.279-1.441zm-3.416 2.377c-.15.179-.225.409-.208.643l.16 2.27-2.11-.853c-.108-.044-.223-.066-.337-.066s-.229.022-.337.066l-2.109.853.159-2.27c.016-.233-.059-.464-.208-.643l-1.463-1.742 2.208-.551c.226-.057.422-.198.545-.396l1.206-1.929 1.206 1.929c.124.198.319.34.545.396l2.208.551z"></path></g><g id="Ebook"></g><g id="Online_Class_1_"></g><g id="Schedule"></g><g id="Idea"></g><g id="Login"></g><g id="Science"></g><g id="Time"></g><g id="Business"></g><g id="Projector"></g></svg>
                     <span class="text-sky-700 font-semibold">Testimoni</span>
                 </a>
-                <a href="/status/bookmark" class="py-4 px-5 flex items-center gap-5 hover:bg-sky-100 hover:border-sky-700 border border-transparent rounded-xl">
+                <a href="/status/bookmark" class="py-4 px-5 flex items-center gap-5 bg-sky-100 border border-sky-700 rounded-xl">
                     <svg class="w-6 fill-sky-700" id="fi_5662990" enable-background="new 0 0 511.958 511.958" viewBox="0 0 511.958 511.958" xmlns="http://www.w3.org/2000/svg"><path d="m400.579 0h-289.2c-25.487 0-47.133 20.556-47.133 47.133v427.63c.075 33.733 41.277 49.561 64.701 25.882l110.235-110.204c8.834-9.216 24.76-9.216 33.594 0l110.235 110.204c23.434 23.688 64.631 7.836 64.701-25.882v-427.63c0-26.577-21.646-47.133-47.133-47.133zm17.133 474.764c-.037 7.142-8.915 9.499-13.508 4.649-22.037-22.071-84.882-84.897-110.195-110.164-19.913-20.826-56.117-20.832-76.021-.04-17.486 17.453-51.714 51.671-78.696 78.645l-31.39 31.376c-4.523 4.799-13.512 3.197-13.657-4.194v-427.903c0-9.582 7.767-17.133 17.134-17.133h289.199c9.353 0 17.134 7.539 17.134 17.133z"></path></svg>
                     <span class="text-sky-700 font-semibold">Aktivitas Tersimpan</span>
                 </a>
@@ -64,58 +64,34 @@
                             <input type="text" class="h-9 w-60 focus:outline-none focus:ring-0 border-none rounded-full" placeholder="Cari Aktivitas">
                             <i class="fa-solid fa-magnifying-glass text-xl text-gray-400 absolute right-4 top-1/2 transform -translate-y-1/2"></i>
                         </div>
-                        <div class="h-5 w-px bg-neutral-200"></div>
-                        <button class="flex items-center border border-neutral-200 rounded-full">  
-                            <h1 class="pl-5 py-1.5 text-gray-500">Terbaru</h1>
-                            <i class="fa-solid fa-chevron-down pl-2 pr-5 text-gray-500"></i>
-                        </button>
                     </div>
-                    <div class="my-5 flex flex-col border border-neutral-200 rounded-[0.7rem]">
-                        <div class="p-3 flex border-dashed border-b">
-                            <img class="w-14 aspect-square rounded-lg" src="{{ asset('images/card/card-1.png') }}" alt="">
-                            <div class="ml-5 flex flex-col gap-y-2">                                
-                                <div class="flex items-center gap-3">
-                                    <span class="text-md font-semibold">Duta Batch 2</span>
-                                    <div class="h-4 w-px bg-neutral-200"></div>
-                                    <div class="flex items-center gap-1">
-                                        <img class="w-4" src="{{ asset('images/icon/guild.svg') }}" alt="">
-                                        <span class="text-sky-700 text-sm font-bold">Rumah Belajar Duta Semesta</span>
-                                    </div>
-                                </div>
-                                <div class="flex items-center gap-2">
-                                    <svg class="w-4 fill-gray-500" id="fi_2948088" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m446 40h-46v-24c0-8.836-7.163-16-16-16s-16 7.164-16 16v24h-224v-24c0-8.836-7.163-16-16-16s-16 7.164-16 16v24h-46c-36.393 0-66 29.607-66 66v340c0 36.393 29.607 66 66 66h380c36.393 0 66-29.607 66-66v-340c0-36.393-29.607-66-66-66zm-380 32h46v16c0 8.836 7.163 16 16 16s16-7.164 16-16v-16h224v16c0 8.836 7.163 16 16 16s16-7.164 16-16v-16h46c18.748 0 34 15.252 34 34v38h-448v-38c0-18.748 15.252-34 34-34zm380 408h-380c-18.748 0-34-15.252-34-34v-270h448v270c0 18.748-15.252 34-34 34z"></path></g></svg>
-                                    <span class="text-sm text-gray-500">5 Januari 2025 - 29 Juni 2025</span>
-                                </div>
+                    <div class="my-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">  
+                        <div class="flex flex-col h-auto w-[14rem] bg-white border border-neutral-200 rounded-xl">
+                            <img class="p-2 h-fit rounded-xl" src="{{ asset('images/card/card-1.png') }}" alt="">  
+                            <h1 class="mt-3 px-5 text-lg text-start font-semibold truncate">Duta Semesta Batch 2</h1>
+                            <p class="mt-2 px-5 text-xs text-start line-clamp-2">  
+                                Buat kamu yang tertarik dengan isu Pendidikan dan kegiatan sosial Dan buat Kamu juga ingin menjadi pejuang kebaikan  
+                            </p>
+                            <div class="mt-2 mx-5 flex flex-row items-center gap-1">   
+                                <svg class="w-4 fill-sky-700" id="fi_2948088" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m446 40h-46v-24c0-8.836-7.163-16-16-16s-16 7.164-16 16v24h-224v-24c0-8.836-7.163-16-16-16s-16 7.164-16 16v24h-46c-36.393 0-66 29.607-66 66v340c0 36.393 29.607 66 66 66h380c36.393 0 66-29.607 66-66v-340c0-36.393-29.607-66-66-66zm-380 32h46v16c0 8.836 7.163 16 16 16s16-7.164 16-16v-16h224v16c0 8.836 7.163 16 16 16s16-7.164 16-16v-16h46c18.748 0 34 15.252 34 34v38h-448v-38c0-18.748 15.252-34 34-34zm380 408h-380c-18.748 0-34-15.252-34-34v-270h448v270c0 18.748-15.252 34-34 34z"></path></g></svg>
+                                <span class="py-1 text-sky-800 text-[11px]">20 Mei 2023</span>  
+                                <div class="mx-2 size-2 rounded-full bg-gray-600"></div>  
+                                <svg class="w-4 fill-sky-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">  
+                                    <path d="M409.124,63.426C368.224,22.525,313.843,0,256.001,0S143.777,22.525,102.877,63.426c-40.901,40.902-63.426,95.282-63.426,153.123c0,117.012,110.638,214.337,170.077,266.623c8.26,7.266,15.393,13.541,21.076,18.849c7.12,6.651,16.259,9.977,25.396,9.977c9.139,0,18.276-3.326,25.397-9.977c5.683-5.309,12.816-11.583,21.076-18.849c59.439-52.287,170.077-149.611,170.077-266.623C472.549,158.708,450.025,104.328,409.124,63.426z M282.663,460.654c-8.441,7.425-15.73,13.838-21.74,19.451c-2.761,2.577-7.085,2.578-9.847,0c-6.009-5.615-13.299-12.027-21.74-19.452c-55.88-49.155-159.895-140.654-159.895-244.103c0-102.868,83.689-186.557,186.558-186.557c102.868,0,186.557,83.689,186.557,186.557C442.557,319.999,338.543,411.498,282.663,460.654z"/>  
+                                    <path d="M256.001,112.938c-52.621,0-95.431,42.809-95.431,95.43s42.81,95.43,95.431,95.43s95.43-42.809,95.43-95.43S308.622,112.938,256.001,112.938z M256.001,273.805c-36.083,0-65.439-29.356-65.439-65.438s29.356-65.438,65.439-65.438s65.438,29.356,65.438,65.438S292.084,273.805,256.001,273.805z"/>  
+                                </svg>
+                                <span class="py-1 text-sky-800 text-[11px]">Jakarta</span>  
                             </div>
-                        </div>
-                        <div class="m-3 flex justify-end items-center">                      
-                            <button class="px-5 py-2 text-white bg-sky-700 text-xs rounded-full">
-                                Tulis Testimoni
-                            </button>
-                        </div>
-                    </div> {{-- card --}}
-                    <div class="my-5 flex flex-col border border-neutral-200 rounded-[0.7rem]">
-                        <div class="p-3 flex border-dashed border-b">
-                            <img class="w-14 aspect-square rounded-lg" src="{{ asset('images/card/card-1.png') }}" alt="">
-                            <div class="ml-5 flex flex-col gap-y-2">                                
-                                <div class="flex items-center gap-3">
-                                    <span class="text-md font-semibold">Duta Batch 2</span>
-                                    <div class="h-4 w-px bg-neutral-200"></div>
-                                    <div class="flex items-center gap-1">
-                                        <img class="w-4" src="{{ asset('images/icon/guild.svg') }}" alt="">
-                                        <span class="text-sky-700 text-sm font-bold">Rumah Belajar Duta Semesta</span>
-                                    </div>
-                                </div>
-                                <div class="flex items-center gap-2">
-                                    <svg class="w-4 fill-gray-500" id="fi_2948088" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m446 40h-46v-24c0-8.836-7.163-16-16-16s-16 7.164-16 16v24h-224v-24c0-8.836-7.163-16-16-16s-16 7.164-16 16v24h-46c-36.393 0-66 29.607-66 66v340c0 36.393 29.607 66 66 66h380c36.393 0 66-29.607 66-66v-340c0-36.393-29.607-66-66-66zm-380 32h46v16c0 8.836 7.163 16 16 16s16-7.164 16-16v-16h224v16c0 8.836 7.163 16 16 16s16-7.164 16-16v-16h46c18.748 0 34 15.252 34 34v38h-448v-38c0-18.748 15.252-34 34-34zm380 408h-380c-18.748 0-34-15.252-34-34v-270h448v270c0 18.748-15.252 34-34 34z"></path></g></svg>
-                                    <span class="text-sm text-gray-500">5 Januari 2025 - 29 Juni 2025</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="m-3 flex justify-end items-center">                      
-                            <p class="text-sm line-clamp-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore tempore, rerum eius assumenda saepe quod iusto asperiores magnam corrupti facilis illo nihil, dolorum odio accusamus labore! Animi neque sequi nobis magnam nulla, illo quia natus repellendus iure cupiditate iste corporis possimus autem omnis saepe ut voluptate dolor ullam, sunt harum voluptatibus impedit! Assumenda eligendi similique dicta perferendis aliquam nobis sunt dolorem? Velit iusto distinctio, dolorem delectus nulla accusantium rerum cumque fugit magnam excepturi temporibus minus! Itaque alias sunt, voluptatibus consectetur ad neque ipsum ipsa provident deserunt assumenda! Eaque atque laborum quas culpa quis, repellendus voluptas mollitia quia, quisquam, velit repudiandae!</p>
-                        </div>
-                    </div> {{-- card --}}
+                            <div class="flex items-center">
+                                <a class="my-3 mx-5 pt-2 h-9 w-[60%] text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700 text-center" href="/activity">Gabung</a>
+                                <svg class="w-4 fill-sky-700" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.045 212.045">
+                                    <path d="M167.871,0H44.84C34.82,0,26.022,8.243,26.022,18v182c0,3.266,0.909,5.988,2.374,8.091c1.752,2.514,4.573,3.955,7.598,3.954
+                                        c2.86,0,5.905-1.273,8.717-3.675l55.044-46.735c1.7-1.452,4.142-2.284,6.681-2.284c2.538,0,4.975,0.832,6.68,2.288l54.86,46.724
+                                        c2.822,2.409,5.657,3.683,8.512,3.683c4.828,0,9.534-3.724,9.534-12.045V18C186.022,8.243,177.891,0,167.871,0z"/>
+                                </svg>
+                            </div>  
+                        </div> {{-- Card --}}
+                    </div>
                 </div>
             </div>
         </div>

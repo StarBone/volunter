@@ -14,8 +14,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ["Figtree", ...defaultTheme.fontFamily.sans],
-                sans: ["InterVariable", ...defaultTheme.fontFamily.sans],
+                sans: ["InterVariable", "Figtree", ...defaultTheme.fontFamily.sans],
                 jakarta: ["Plus Jakarta Sans", ...defaultTheme.fontFamily.sans],
             },
         },
