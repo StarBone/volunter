@@ -35,22 +35,22 @@
                 </div>
             </div>
             <div class="p-6 mt-4 flex flex-col gap-4 bg-white text-sm">  
-                <button type="button" class="py-4 px-5 flex items-center gap-5 bg-sky-100 border border-sky-700 rounded-xl">
+                <a href="" class="py-4 px-5 flex items-center gap-5 bg-sky-100 border border-sky-700 rounded-xl">
                     <svg class="w-6 fill-sky-700" id="fi_3503786" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><g fill=""><path d="m13.1 1a10.927 10.927 0 0 0 -10.534 8.223l-.732-1.107a1 1 0 1 0 -1.668 1.1l2.2 3.334a1.084 1.084 0 0 0 .634.425 1.024 1.024 0 0 0 .756-.145l3.3-2.223a1 1 0 1 0 -1.115-1.659l-1.501 1.012a8.909 8.909 0 1 1 8.66 11.04 8.892 8.892 0 0 1 -7.281-3.822 1 1 0 1 0 -1.64 1.143 10.881 10.881 0 0 0 19.821-6.321 10.963 10.963 0 0 0 -10.9-11z"></path><path d="m13 5.95a1 1 0 0 0 -1 1v5.05a1.04 1.04 0 0 0 .293.707l3 3.027a1.013 1.013 0 0 0 1.414.007 1 1 0 0 0 .006-1.414l-2.713-2.738v-4.639a1 1 0 0 0 -1-1z"></path></g></svg>
                     <span class="text-sky-700 font-semibold">Aktivitas Saya</span>
-                </button>
-                <button type="button" class="py-4 px-5 flex items-center gap-5">
+                </a>
+                <a href="/status/testinomy" class="py-4 px-5 flex items-center gap-5">
                     <svg class="w-6 fill-sky-700" enable-background="new 0 0 32 32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" id="fi_11213138"><g id="Grid" display="none"></g><g id="Webinar"></g><g id="Assignment"></g><g id="Article"></g><g id="Audi"></g><g id="Video_Tutorial"></g><g id="Discussion_1_"></g><g id="Resume"></g><g id="Trophy"></g><g id="Encyclopedia"></g><g id="Smartphone"></g><g id="Online_Lesson"></g><g id="Webpage"></g><g id="Search"></g><g id="Registration"></g><g id="Certificate_1_"></g><g id="Review"><path d="m20.03 14.084c0-.497-.403-.9-.9-.9h-9.9c-.497 0-.9.403-.9.9s.403.9.9.9h9.9c.497 0 .9-.403.9-.9z"></path><path d="m9.228 17.729c-.497 0-.9.403-.9.9s.403.9.9.9h5.249c.497 0 .9-.403.9-.9s-.403-.9-.9-.9z"></path><path d="m25.96 14.134c-.497 0-.9.403-.9.9v7.279c0 1.362-1.108 2.47-2.47 2.47h-6.02c-.195 0-.385.063-.541.181l-5.198 3.909c-.132.099-.256.058-.318.024-.063-.032-.167-.111-.163-.272l.1-2.91c.008-.244-.083-.481-.252-.656-.169-.176-.403-.275-.647-.275h-4.181c-1.362 0-2.47-1.107-2.47-2.47v-11.9c0-1.367 1.108-2.479 2.47-2.479h11.09c.497 0 .9-.403.9-.9s-.403-.9-.9-.9h-11.09c-2.354 0-4.27 1.92-4.27 4.28v11.899c0 2.354 1.916 4.271 4.27 4.271h3.249l-.068 1.982c-.024.814.409 1.554 1.132 1.929.309.161.642.24.972.24.443 0 .882-.143 1.256-.422l4.959-3.729h5.719c2.354 0 4.27-1.916 4.27-4.271v-7.279c.001-.498-.402-.901-.899-.901z"></path><path d="m30.825 5.561c-.163-.5-.564-.874-1.073-1l-2.3-.573-1.256-2.01c-.557-.894-2.011-.892-2.567 0l-1.256 2.01-2.3.573c-.509.126-.911.5-1.073 1s-.058 1.039.28 1.442l1.524 1.814-.166 2.364c-.037.524.195 1.021.62 1.33.264.192.574.291.888.291.191 0 .384-.037.569-.112l2.198-.888 2.197.888c.487.198 1.031.13 1.457-.178.425-.309.657-.806.621-1.331l-.166-2.364 1.524-1.815c.337-.402.442-.941.279-1.441zm-3.416 2.377c-.15.179-.225.409-.208.643l.16 2.27-2.11-.853c-.108-.044-.223-.066-.337-.066s-.229.022-.337.066l-2.109.853.159-2.27c.016-.233-.059-.464-.208-.643l-1.463-1.742 2.208-.551c.226-.057.422-.198.545-.396l1.206-1.929 1.206 1.929c.124.198.319.34.545.396l2.208.551z"></path></g><g id="Ebook"></g><g id="Online_Class_1_"></g><g id="Schedule"></g><g id="Idea"></g><g id="Login"></g><g id="Science"></g><g id="Time"></g><g id="Business"></g><g id="Projector"></g></svg>
                     <span class="text-sky-700 font-semibold">Testimoni</span>
-                </button>
-                <button type="button" class="py-4 px-5 flex items-center gap-5">
+                </a>
+                <a href="" class="py-4 px-5 flex items-center gap-5">
                     <svg class="w-6 fill-sky-700" id="fi_5662990" enable-background="new 0 0 511.958 511.958" viewBox="0 0 511.958 511.958" xmlns="http://www.w3.org/2000/svg"><path d="m400.579 0h-289.2c-25.487 0-47.133 20.556-47.133 47.133v427.63c.075 33.733 41.277 49.561 64.701 25.882l110.235-110.204c8.834-9.216 24.76-9.216 33.594 0l110.235 110.204c23.434 23.688 64.631 7.836 64.701-25.882v-427.63c0-26.577-21.646-47.133-47.133-47.133zm17.133 474.764c-.037 7.142-8.915 9.499-13.508 4.649-22.037-22.071-84.882-84.897-110.195-110.164-19.913-20.826-56.117-20.832-76.021-.04-17.486 17.453-51.714 51.671-78.696 78.645l-31.39 31.376c-4.523 4.799-13.512 3.197-13.657-4.194v-427.903c0-9.582 7.767-17.133 17.134-17.133h289.199c9.353 0 17.134 7.539 17.134 17.133z"></path></svg>
                     <span class="text-sky-700 font-semibold">Aktivitas Tersimpan</span>
-                </button>
-                <button type="button" class="py-4 px-5 flex items-center gap-5">
+                </a>
+                <a href="" class="py-4 px-5 flex items-center gap-5">
                     <svg class="w-6 fill-sky-700" viewBox="0 0 511 512" xmlns="http://www.w3.org/2000/svg" id="fi_1286853"><path d="m361.5 392v40c0 44.113281-35.886719 80-80 80h-201c-44.113281 0-80-35.886719-80-80v-352c0-44.113281 35.886719-80 80-80h201c44.113281 0 80 35.886719 80 80v40c0 11.046875-8.953125 20-20 20s-20-8.953125-20-20v-40c0-22.054688-17.945312-40-40-40h-201c-22.054688 0-40 17.945312-40 40v352c0 22.054688 17.945312 40 40 40h201c22.054688 0 40-17.945312 40-40v-40c0-11.046875 8.953125-20 20-20s20 8.953125 20 20zm136.355469-170.355469-44.785157-44.785156c-7.8125-7.8125-20.476562-7.8125-28.285156 0-7.8125 7.808594-7.8125 20.472656 0 28.28125l31.855469 31.859375h-240.140625c-11.046875 0-20 8.953125-20 20s8.953125 20 20 20h240.140625l-31.855469 31.859375c-7.8125 7.808594-7.8125 20.472656 0 28.28125 3.90625 3.90625 9.023438 5.859375 14.140625 5.859375 5.121094 0 10.238281-1.953125 14.144531-5.859375l44.785157-44.785156c19.496093-19.496094 19.496093-51.214844 0-70.710938zm0 0"></path></svg>
                     <span class="text-sky-700 font-semibold">Logout</span>
-                </button>
+                </a>
             </div>
         </aside>  
         <div class="relative w-4/6 flex-grow"> 
@@ -149,7 +149,7 @@
                                 <i class="fa-solid fa-circle-info flex-none text-sky-700"></i>
                                 <div class="text-[#142f37] text-xs font-normal leading-normal">Klaim sertifikat membutuhkan Poin</div>
                             </div>                       
-                            <button class="px-5 py-2 flex gap-1 text-white bg-sky-700 text-xs rounded-full">
+                            <button type="button" onclick="showSuccessNotification()" class="px-5 py-2 flex gap-1 text-white bg-sky-700 text-xs rounded-full">
                                 <svg class="w-4 fill-white" id="fi_3502477"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 19h-18a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2z"></path><path d="m12 2a1 1 0 0 0 -1 1v10.59l-3.29-3.3a1 1 0 0 0 -1.42 1.42l5 5a1 1 0 0 0 1.42 0l5-5a1 1 0 0 0 -1.42-1.42l-3.29 3.3v-10.59a1 1 0 0 0 -1-1z"><
                                 <span>            
                                     Unduh Sertifikat Ceunah
@@ -160,6 +160,5 @@
                 </div>
             </div>
         </div>
-
     </section> 
 </x-app-layout>

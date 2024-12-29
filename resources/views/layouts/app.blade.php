@@ -35,6 +35,7 @@
         </main>
         @include('auth.modal.gabungRelawan')
         @include('auth.modal.successRelawan')
+        @include('auth.modal.successSertificate')
         @include('components.footer')
     </body>
 </html>
