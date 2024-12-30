@@ -32,16 +32,20 @@ class RegisteredActivityController extends Controller
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
-            'phone' => ['required', 'regex:/^\+?[0-9\s\-]{13,15}$/', 'unique:users,phone'],
+            'phone' => ['required', 'regex:/^8[0-9]{9,10}$/', 'unique:users,phone'],
+            'gender' => ['required', 'in:male,female'],
+            'address' => ['required', 'string', 'max:500'],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
-            'phone' => $request->phone,
-            'role' => 'admin',
+            'phone' => '+62' . $request->phone,
+            'gender' => $request->gender,
+            'address' => $request->address,
             'password' => Hash::make($request->password),
+            'role' => 'user',
         ]);
 
         event(new Registered($user));
