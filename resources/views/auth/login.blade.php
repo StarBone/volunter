@@ -24,10 +24,14 @@
                     <div class="flex flex-col space-y-3 mt-3">
                         <div class="flex justify-between items-center">
                             <x-input-label for="password" :value="__('Password')" />
-                            <a href="{{ route('register') }}" class="text-sm underline font-semibold">Lupa Password?</a>
+                            @if (Route::has('password.request'))
+                                <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500" href="{{ route('password.request') }}">
+                                    {{ __('Lupa password?') }}
+                                </a>
+                            @endif
                         </div>
                         <div x-data="{ showPassword: false }" class="relative">
-                            <x-text-input-pass id="password" class="w-full"
+                            <x-text-input id="password" class="w-full"
                             x-bind:type="showPassword ? 'text' : 'password'"
                             name="password"
                             required autocomplete="new-password" />
@@ -42,6 +46,13 @@
                             </button>
                         </div>                        
                         <x-input-error :messages="$errors->get('password')" class="mt-2" />
+                    </div>
+
+                    <div class="block mt-4">
+                        <label for="remember_me" class="inline-flex items-center">
+                            <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-sky-600 shadow-sm focus:ring-sky-500" name="remember">
+                            <span class="ms-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
+                        </label>
                     </div>
             
                     <div class="">
