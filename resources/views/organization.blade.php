@@ -1,4 +1,5 @@
-<x-app-layout>  
+<x-app-layout>
+    @section('title', 'Organisasi - ' . config('app.name'))
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">  
     <section class="flex flex-col min-h-screen mx-6">  
         <div class="flex flex-col flex-grow">  

@@ -1,7 +1,8 @@
 <link href="https://cdn.jsdelivr.net/npm/flowbite@1.6.5/dist/flowbite.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/flowbite@1.6.5/dist/flowbite.min.js"></script>
 <img class="absolute top-0 right-0 z-0" src="{{ asset('images/shape/s-ad.png') }}" alt="">
-<x-app-layout>  
+<x-app-layout>
+    @section('title', 'Status - ' . config('app.name'))
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">  
     <section class="flex gap-5 items-start mx-20">
         <aside class="w-2/6 ml-4 sticky top-5">  
@@ -67,8 +68,13 @@
                     </div>
                     <div class="mt-5 flex items-center gap-3">
                         <div class="p-px relative bg-neutral-200 rounded-full">
-                            <input type="text" class="h-9 w-60 focus:outline-none focus:ring-0 border-none rounded-full" placeholder="Cari Aktivitas">
-                            <i class="fa-solid fa-magnifying-glass text-xl text-gray-400 absolute right-4 top-1/2 transform -translate-y-1/2"></i>
+                            <input type="text" class="pr-10 h-9 w-60 text-sm placeholder:text-neutral-200 focus:outline-none focus:ring-0 border-none rounded-full" placeholder="Cari Aktivitas">
+                            <svg class="w-5 fill-gray-500 absolute right-4 top-1/2 transform -translate-y-1/2" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
+                                <path d="M505.749,475.587l-145.6-145.6c28.203-34.837,45.184-79.104,45.184-127.317c0-111.744-90.923-202.667-202.667-202.667
+                                    S0,90.925,0,202.669s90.923,202.667,202.667,202.667c48.213,0,92.48-16.981,127.317-45.184l145.6,145.6
+                                    c4.16,4.16,9.621,6.251,15.083,6.251s10.923-2.091,15.083-6.251C514.091,497.411,514.091,483.928,505.749,475.587z
+                                     M202.667,362.669c-88.235,0-160-71.765-160-160s71.765-160,160-160s160,71.765,160,160S290.901,362.669,202.667,362.669z"/>
+                            </svg>
                         </div>
                         <div class="h-5 w-px bg-neutral-200"></div>
                         <button class="flex items-center border border-neutral-200 rounded-full">  

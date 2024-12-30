@@ -1,7 +1,8 @@
 <link href="https://cdn.jsdelivr.net/npm/flowbite@1.6.5/dist/flowbite.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/flowbite@1.6.5/dist/flowbite.min.js"></script>
 <img class="absolute top-0 right-0 z-0" src="{{ asset('images/shape/s-ad.png') }}" alt="">
-<x-app-layout>  
+<x-app-layout>
+    @section('title', 'Aktivitas - ' . config('app.name'))  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">  
     <section class="flex items-start mx-20">
         <div class="relative w-4/6 flex-grow"> 

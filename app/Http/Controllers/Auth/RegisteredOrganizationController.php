@@ -19,7 +19,7 @@ class RegisteredOrganizationController extends Controller
      */
     public function create(): View
     {
-        return view('organization.register-organization');
+        return view('auth.register-organization');
     }
 
     /**
@@ -48,6 +48,6 @@ class RegisteredOrganizationController extends Controller
 
         Auth::login($user);
 
-        return redirect()->route('organization/dashboard');
+        return redirect()->route('/');
     }
 }
