@@ -28,45 +28,44 @@
                     <p class="mt-5">Breafing akan dilakukan sebelum kegiatan berlangsung.</p>  
                 </div>  
 
+                {{-- Pekerjaan --}}
                 <div class="mt-6 p-6 bg-white rounded-lg ">  
                     <h1 class="text-3xl font-semibold">Pekerjaan Yang Dibuka</h1>   
-                    <div class="mx-2 my-5 flex flex-col border border-neutral-200 rounded-[0.7rem]">  
-                        <div class="flex justify-between items-center p-3">  
-                            <h1 class="font-semibold text-sky-700">Desain Grafis</h1>  
-                            <img class="mr-3" src="{{ asset('images/icon/arrow-top.svg') }}" alt="">  
-                        </div>  
-                        <div class="p-3 grid grid-cols-2 gap-4 rounded-b-[0.7rem]">  
-                            <h2>Nama Pekerjaan</h2>  
-                            <span>Desain Poster</span>  
-                            <h2>Relawan Dibutuhkan</h2>  
-                            <span>2 Orang</span>  
-                            <h2>Total Jam Kerja</h2>  
-                            <span>20 Jam</span>  
-                            <h2>Tugas Relawan</h2>  
-                            <span>Mengkoordinasi relawan dan supervisi</span>  
-                            {{-- <textarea class="border border-gray-300 p-2 rounded" rows="4" name="tugas_relawan">{{ $post['tugas_relawan'] }}</textarea> --}}
-                            <h2>Tugas Ketua</h2>  
-                            <span>Mengkoordinasi relawan dan supervisi</span>  
-                            {{-- <textarea class="border border-gray-300 p-2 rounded" rows="4" name="tugas_ketua">{{ $post['tugas_ketua'] }}</textarea> --}}
-                            <h2>Domisili</h2>  
-                            <span>Jakarta</span>  
-                        </div>  
-                    </div>  
-                    <div class="mx-2 my-5 flex flex-col border border-neutral-200 rounded-[0.7rem]">
-                        <div class="flex justify-between items-center p-3">  
-                            <h1 class="font-semibold text-sky-700">Desain Grafis</h1>  
-                            <img class="mr-3" src="{{ asset('images/icon/arrow-bottom.svg') }}" alt="">  
-                        </div>  
+                    <div class="mt-5 w-full overflow-hidden border border-neutral-200 rounded-2xl">
+                        <div x-data="{ isExpanded: false }" class="">
+                            <button id="controlsAccordionItemOne" type="button" class="p-4 flex w-full items-center justify-between gap-4 text-sky-700 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemTwo" @click="isExpanded = ! isExpanded" :class="isExpanded ? 'text-onSurfaceStrong font-bold'  : 'text-onSurface font-semibold'" :aria-expanded="isExpanded ? 'true' : 'false'">
+                                Desain Grafis
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="currentColor" class="size-5 shrink-0 transition" aria-hidden="true" :class="isExpanded  ?  'rotate-180'  :  ''">
+                                   <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                                </svg>
+                            </button>
+                            <div x-cloak x-show="isExpanded" id="accordionItemOne" role="region" aria-labelledby="controlsAccordionItemOne" x-collapse>
+                                <div class="p-4 grid grid-cols-2 gap-4 text-sm sm:text-base text-gray-500">
+                                    <h2>Nama Pekerjaan</h2>  
+                                    <span>Desain Poster</span>  
+                                    <h2>Relawan Dibutuhkan</h2>  
+                                    <span>2 Orang</span>  
+                                    <h2>Total Jam Kerja</h2>  
+                                    <span>20 Jam</span>  
+                                    <h2>Tugas Relawan</h2>  
+                                    <span>Mengkoordinasi relawan dan supervisi</span>  
+                                    <h2>Tugas Ketua</h2>  
+                                    <span>Mengkoordinasi relawan dan supervisi</span>  
+                                    <h2>Domisili</h2>  
+                                    <span>Jakarta</span>  
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="mt-6 p-6 bg-white rounded-lg ">  
                     <h1 class="text-3xl font-semibold">Kategori</h1>  
                     <div class="mt-5 flex flex-row items-center space-x-3">  
-                        <span class="w-fit inline-flex overflow-hidden rounded-2xl bg-violet-50 text-xs font-medium text-amber-500">
+                        <span class="w-fit inline-flex overflow-hidden rounded-2xl bg-amber-100 text-xs font-medium text-amber-500">
                             <span class="px-2 py-1 bg-amber-100">Lingkungan</span>
                         </span>
-                        <span class="w-fit inline-flex overflow-hidden rounded-2xl bg-violet-50 text-xs font-medium text-amber-500">
+                        <span class="w-fit inline-flex overflow-hidden rounded-2xl bg-amber-100 text-xs font-medium text-amber-500">
                             <span class="px-2 py-1 bg-amber-100">Pendidikan</span>
                         </span>
                     </div>  
@@ -74,20 +73,16 @@
 
                 <div class="mt-6 p-6 bg-white rounded-lg ">  
                     <h1 class="text-3xl font-semibold">Peserta (25)</h1>  
-                    <div class="flex justify-between">
-                        <div class="mt-3 p-3 w-1/6 text-center rounded-lg border border-neutral-200 hover:bg-sky-700 text-gray-500 hover:text-white">
+                    <div class="flex gap-3">
+                        <div class="mt-3 p-3 w-1/6 flex flex-col text-center rounded-lg border border-neutral-200 hover:bg-sky-700 text-gray-500 hover:text-white">
                             <img class="w-16 h-16 rounded-full mx-auto" src="https://media.tenor.com/HGVnQynHnmQAAAAe/alya-kujou.png" alt="">
-                            <div class="mt-2 break-words text-sm">Muhammad</div>
+                            <span class="mt-2 text-sm">Muhammad</span>
                         </div>
-                        <div class="mt-3 p-3 w-1/6 text-center rounded-lg border border-neutral-200 hover:bg-sky-700 text-gray-500 hover:text-white">
+                        <div class="mt-3 p-3 w-1/6 flex flex-col text-center rounded-lg border border-neutral-200 hover:bg-sky-700 text-gray-500 hover:text-white">
                             <img class="w-16 h-16 rounded-full mx-auto" src="https://media.tenor.com/HGVnQynHnmQAAAAe/alya-kujou.png" alt="">
-                            <div class="mt-2 break-words text-sm">Muhammad</div>
+                            <span class="mt-2 text-sm">Muhammad</span>
                         </div>
-                        <div class="mt-3 p-3 w-1/6 text-center rounded-lg border border-neutral-200 hover:bg-sky-700 text-gray-500 hover:text-white">
-                            <img class="w-16 h-16 rounded-full mx-auto" src="https://media.tenor.com/HGVnQynHnmQAAAAe/alya-kujou.png" alt="">
-                            <div class="mt-2 break-words text-sm">Muhammad</div>
-                        </div>
-                        <div class="mt-3 p-3 w-1/6 text-center rounded-lg border border-neutral-200 hover:bg-sky-700 text-gray-500 hover:text-white">
+                        {{-- <div class="mt-3 p-3 w-1/6 text-center rounded-lg border border-neutral-200 hover:bg-sky-700 text-gray-500 hover:text-white">
                             <img class="w-16 h-16 rounded-full mx-auto" src="https://media.tenor.com/HGVnQynHnmQAAAAe/alya-kujou.png" alt="">
                             <div class="mt-2 break-words text-sm">Muhammad</div>
                         </div>
@@ -96,13 +91,12 @@
                                 <div class="filter blur-sm">
                                     <img class="w-16 h-16 rounded-full mx-auto" src="https://media.tenor.com/HGVnQynHnmQAAAAe/alya-kujou.png" alt="">  
                                 </div>
-                                {{-- <img class="w-16 h-16 rounded-full mx-auto filter blur-sm border" src="https://media.tenor.com/HGVnQynHnmQAAAAe/alya-kujou.png" alt="">   --}}
                                 <div class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">  
                                     <span class="text-white text-lg font-bold">+21</span>  
                                 </div>  
                             </div>  
                             <div class="mt-2 break-words text-sm font-bold">+21 lainnya</div>  
-                        </div>
+                        </div> --}}
                     </div>
                 </div>  
 

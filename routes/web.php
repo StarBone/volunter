@@ -33,7 +33,13 @@ Route::get('/status/testinomy', [StatusTestimony::class, 'index'])->name('status
 
 Route::get('/status/bookmark', [StatusBookmarkController::class, 'index'])->name('status.bookmark');
 
-Route::get('/tes', [TesController::class, 'index'])->name('tes');  
+Route::get('/tes', [TesController::class, 'index'])->name('tes');
+
+Route::get('/index', function () {
+    return view('superAdmin.index');})->name('index');
+
+Route::get('/forms', function () {
+    return view('superAdmin.forms');})->name('forms');
 
 // Auth
 

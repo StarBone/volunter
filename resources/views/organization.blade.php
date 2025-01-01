@@ -30,8 +30,12 @@
                             <span class="pl-1 text-sky-800 text-xs">Jakarta</span>  
                         </div>  
                         <div class="mt-2 flex flex-row items-center space-x-3">  
-                            <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Lingkungan</span>   
-                            <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Pendidikan</span>   
+                            <span class="w-fit inline-flex overflow-hidden rounded-2xl bg-amber-100 text-xs font-medium text-amber-500">
+                                <span class="px-2 py-1 bg-amber-100">Lingkungan</span>
+                            </span>
+                            <span class="w-fit inline-flex overflow-hidden rounded-2xl bg-amber-100 text-xs font-medium text-amber-500">
+                                <span class="px-2 py-1 bg-amber-100">Pendidikan</span>
+                            </span>
                         </div>  
                         <div class="my-3 flex items-center font-semibold text-blue-800">  
                             <a href="/organization">Lihat Detail<i class="fa-solid fa-chevron-right pl-2"></i></a>  
@@ -47,9 +51,13 @@
                             <span class="pl-1 text-sky-800 text-xs">Jakarta</span>  
                         </div>  
                         <div class="mt-2 flex flex-row items-center space-x-3">  
-                            <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Lingkungan</span>   
-                            <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Pendidikan</span>   
-                        </div>  
+                            <span class="w-fit inline-flex overflow-hidden rounded-2xl bg-amber-100 text-xs font-medium text-amber-500">
+                                <span class="px-2 py-1 bg-amber-100">Lingkungan</span>
+                            </span>
+                            <span class="w-fit inline-flex overflow-hidden rounded-2xl bg-amber-100 text-xs font-medium text-amber-500">
+                                <span class="px-2 py-1 bg-amber-100">Pendidikan</span>
+                            </span>
+                        </div>   
                         <div class="my-3 flex items-center font-semibold text-blue-800">  
                             <a href="/organization">Lihat Detail<i class="fa-solid fa-chevron-right pl-2"></i></a>  
                         </div>  
@@ -64,8 +72,12 @@
                             <span class="pl-1 text-sky-800 text-xs">Jakarta</span>  
                         </div>  
                         <div class="mt-2 flex flex-row items-center space-x-3">  
-                            <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Lingkungan</span>   
-                            <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Pendidikan</span>   
+                            <span class="w-fit inline-flex overflow-hidden rounded-2xl bg-amber-100 text-xs font-medium text-amber-500">
+                                <span class="px-2 py-1 bg-amber-100">Lingkungan</span>
+                            </span>
+                            <span class="w-fit inline-flex overflow-hidden rounded-2xl bg-amber-100 text-xs font-medium text-amber-500">
+                                <span class="px-2 py-1 bg-amber-100">Pendidikan</span>
+                            </span>
                         </div>  
                         <div class="my-3 flex items-center font-semibold text-blue-800">  
                             <a href="/organization">Lihat Detail<i class="fa-solid fa-chevron-right pl-2"></i></a>  
@@ -74,7 +86,7 @@
                 </div>   
             </div>
             <div class="flex justify-center items-center">  
-                <button class="my-9 mx-6 py-2 w-32 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700"><i class="fa-solid fa-arrows-rotate pr-2"></i>Muat ulang</button>  
+                <button class="my-9 mx-6 py-2 w-32 text-xs border rounded-full text-sky-700 border-sky-700 hover:text-white hover:bg-sky-700" onClick="window.location.reload();"><i class="fa-solid fa-arrows-rotate pr-2"></i>Muat ulang</button>  
             </div>  
         </div>  
     </section>  
