@@ -1,41 +1,33 @@
-registrasi relawan :
-nama
-email
-password
-jenis kelamin
-tgl lahir
-ketertarikan isu -> Bidang dalam database, pake Enum
-		 = kesehatan, pendidikan, lingkungan
-profesi
-institusi
---Domisili
-provinsi -> pake Enum
-kota -> pake Enum, Jika provinsi belum dipilih, disable box kota
+Aktivitas :
+-gambar aktivitas
+-judul
+-deskripsi
+-periode
+-jadwal
+-lokasi
+-detail aktivitas
+	
+-pekerjaan :
+--posisi pekerjaan
+--nama
+--jumlah orang
+--total jam
+--tugas
+--domisili
 
-registrasi organisasi :
-nama
-email pribadi
-no hp --
-password
+-kategori
+-peserta
+-dokumentasi
 
-nama organisasi
-bidang --
-tipe --
-email --
-no HP --
-lokasi
-website
-tanggal Pendirian
-relawan
+-admin organisasi
+-bookmark
 
-aktivitas
+Aktivitas Card:
+-gambar
+-judul
+-deskripsi
+-admin organisasi
+-periode -> awal text
+-lokasi -> provinsi
+-bookmark
 
-comment Relawan
-
-
-Buat Aktivitas :
-Judul Aktivitas
-Tugas Relawan
-Waktu Aktivitas
-
-pilih relawan
