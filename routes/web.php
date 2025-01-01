@@ -10,12 +10,12 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StatusBookmarkController;
 use App\Http\Controllers\StatusMyActivityController;
 use App\Http\Controllers\StatusTestimony;
-use App\Http\Controllers\TesController;  
+use App\Http\Controllers\TesController;
 use Illuminate\Support\Facades\Route;  
 
 Route::get('/', [HomeController::class, 'index'])->name('home');  
 
-Route::get('/home', [HomeController::class, 'index'])->middleware(['auth', 'verified'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::get('/about', [AboutController::class, 'index'])->name('about');  
 
@@ -36,13 +36,24 @@ Route::get('/status/bookmark', [StatusBookmarkController::class, 'index'])->name
 Route::get('/tes', [TesController::class, 'index'])->name('tes');  
 
 // Auth
-Route::get('/dashboard/user', function () {  
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');  
 
-Route::get('/dashboard/organization', function () {  
-    return view('organization.dashboard-organization');
-})->middleware(['auth', 'verified'])->name('dashboard.organization');  
+//Admin
+Route::middleware(['auth', 'admin'])->group(function () {  
+
+    Route::get('/dashboard/organization', function () {  
+        return view('organization.dashboard-organization');
+    })->middleware(['auth', 'verified'])->name('dashboard.organization');  
+
+});
+
+//User
+Route::middleware(['auth', 'user'])->group(function () {  
+
+    Route::get('/dashboard/user', function () {  
+        return view('dashboard');
+    })->middleware(['auth', 'verified', 'user'])->name('dashboard');  
+
+});
 
 Route::middleware('auth')->group(function () {  
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');  

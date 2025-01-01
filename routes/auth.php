@@ -19,7 +19,7 @@ Route::middleware('guest')->group(function () {
     Route::post('register', [RegisteredActivityController::class, 'store']);
 //
     Route::get('register/organization', [RegisteredOrganizationController::class, 'create'])
-        ->name('register/organization');
+        ->name('register.organization');
 
     Route::post('register/organization', [RegisteredOrganizationController::class, 'store']);
 //

@@ -63,8 +63,12 @@
                 <div class="mt-6 p-6 bg-white rounded-lg ">  
                     <h1 class="text-3xl font-semibold">Kategori</h1>  
                     <div class="mt-5 flex flex-row items-center space-x-3">  
-                        <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Lingkungan</span>   
-                        <span class="px-2 py-1 bg-amber-100 text-yellow-700 text-xs rounded-lg">Pendidikan</span>   
+                        <span class="w-fit inline-flex overflow-hidden rounded-2xl bg-violet-50 text-xs font-medium text-amber-500">
+                            <span class="px-2 py-1 bg-amber-100">Lingkungan</span>
+                        </span>
+                        <span class="w-fit inline-flex overflow-hidden rounded-2xl bg-violet-50 text-xs font-medium text-amber-500">
+                            <span class="px-2 py-1 bg-amber-100">Pendidikan</span>
+                        </span>
                     </div>  
                 </div>  
 
