@@ -92,7 +92,7 @@
                             <i class="fas fa-list mr-3"></i> Contact Form
                         </p>
                         <div class="leading-loose">
-                            <form action="{{ route('submit') }}" method="POST" enctype="multipart/form-data" class="p-10 bg-white rounded shadow-xl">
+                            <form action="{{ route('submit') }}" method="POST" class="p-10 bg-white rounded shadow-xl">
                                 @csrf
 
                                 <div class="">

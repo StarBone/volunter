@@ -103,19 +103,17 @@
                                     <th class="py-2">Periode Aktivitas</th>
                                     <th class="py-2">Jadwal Hari</th>
                                     <th class="py-2">Jadwal Waktu</th>
-                                    <th class="py-2">Gambar</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach($activity as $data)
+                                @foreach($relawans as $data)
                                 <tr>
                                     <td class="py-2">{{ $data->title }}</td>
                                     <td class="py-2">{{ $data->description }}</td>
-                                    <td class="py-2">{{ $data->detailDescription }}</td>
+                                    <td class="py-2">{{ $data->detail_activity }}</td>
                                     <td class="py-2">{{ $data->period }}</td>
                                     <td class="py-2">{{ $data->schedule_day }}</td>
                                     <td class="py-2">{{ $data->schedule_time }}</td>
-                                    <td class="py-2"><img src="{{ asset('storage/' . $data->img_activity) }}" alt="Activity Image" class="w-16 h-16"></td>
                                 </tr>
                                 @endforeach
                             </tbody>
