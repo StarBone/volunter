@@ -92,7 +92,9 @@
                             <i class="fas fa-list mr-3"></i> Contact Form
                         </p>
                         <div class="leading-loose">
-                            <form class="p-10 bg-white rounded shadow-xl">
+                            <form action="{{ route('submit') }}" method="POST" enctype="multipart/form-data" class="p-10 bg-white rounded shadow-xl">
+                                @csrf
+
                                 <div class="">
                                     <label class="block text-sm text-gray-600" for="title">Judul</label>
                                     <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="title" name="title" type="text" required="" placeholder="Judul" aria-label="title">
@@ -103,7 +105,7 @@
                                 </div>
                                 <div class="mt-2">
                                     <label class=" block text-sm text-gray-600" for="detailDescription">Detail Deskripsi</label>
-                                    <textarea class="w-full px-5 py-2 text-xs text-gray-700 bg-gray-200 rounded" id="detailDescription" name="detailDescription" rows="10" required="" placeholder="Detail Deskripsi" aria-label="detailDescription"></textarea>
+                                    <textarea class="w-full px-5 py-2 text-xs text-gray-700 bg-gray-200 rounded" id="detail_activity" name="detail_activity" rows="10" required="" placeholder="Detail Deskripsi" aria-label="detailDescription"></textarea>
                                 </div>
                                 <div class="mt-2">
                                     <label class="block text-sm text-gray-600" for="period">Periode Aktivitas</label>
@@ -112,13 +114,13 @@
                                 <div class="mt-2">
                                     <label class="block text-sm text-gray-600" for="schedule_day">Jadwal Hari</label>
                                     <select class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="schedule_day" name="schedule_day" required="" aria-label="schedule_day">
-                                        <option value="Monday">Monday</option>
-                                        <option value="Tuesday">Tuesday</option>
-                                        <option value="Wednesday">Wednesday</option>
-                                        <option value="Thursday">Thursday</option>
-                                        <option value="Friday">Friday</option>
-                                        <option value="Saturday">Saturday</option>
-                                        <option value="Sunday">Sunday</option>
+                                        <option value="Senin">Senin</option>
+                                        <option value="Selasa">Selasa</option>
+                                        <option value="Rabu">Rabu</option>
+                                        <option value="Kamis">Kamis</option>
+                                        <option value="Jumat">Jumat</option>
+                                        <option value="Sabtu">Sabtu</option>
+                                        <option value="Minggu">Minggu</option>
                                     </select>
                                 </div>
                                 <div class="mt-2">
@@ -126,61 +128,19 @@
                                     <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="schedule_time" name="schedule_time" type="time" required="" placeholder="Schedule Time" aria-label="schedule_time" step="">
                                 </div>
                                 <div class="mt-2">
-                                    <label class="block text-sm text-gray-600" for="img_activity">Gambar</label>
-                                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="img_activity" name="img_activity" type="file" required="" aria-label="img_activity">
+                                    <label class="block text-sm text-gray-600" for="location">Lokasi</label>
+                                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="location" name="location" type="text" required="" placeholder="Lokasi" aria-label="location">
                                 </div>
+                                {{-- <div class="mt-2">
+                                    <label class="block text-sm text-gray-600" for="img_activity">Gambar</label>
+                                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="img_activity" name="img_activity" type="file" required="" accept=".png, .jpg, .jpeg"  aria-label="img_activity">
+                                </div> --}}
                                 <div class="mt-6">
                                     <button class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded" type="submit">Submit</button>
                                 </div>
                             </form>
                         </div>
                     </div>
-
-                    {{-- <div class="w-full lg:w-1/2 mt-6 pl-0 lg:pl-2">
-                        <p class="text-xl pb-6 flex items-center">
-                            <i class="fas fa-list mr-3"></i> Checkout Form
-                        </p>
-                        <div class="leading-loose">
-                            <form class="p-10 bg-white rounded shadow-xl">
-                                <p class="text-lg text-gray-800 font-medium pb-4">Customer information</p>
-                                <div class="">
-                                    <label class="block text-sm text-gray-600" for="cus_name">Name</label>
-                                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="cus_name" name="cus_name" type="text" required="" placeholder="Your Name" aria-label="Name">
-                                </div>
-                                <div class="mt-2">
-                                    <label class="block text-sm text-gray-600" for="cus_email">Email</label>
-                                    <input class="w-full px-5  py-4 text-gray-700 bg-gray-200 rounded" id="cus_email" name="cus_email" type="text" required="" placeholder="Your Email" aria-label="Email">
-                                </div>
-                                <div class="mt-2">
-                                    <label class=" block text-sm text-gray-600" for="cus_email">Address</label>
-                                    <input class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded" id="cus_email" name="cus_email" type="text" required="" placeholder="Street" aria-label="Email">
-                                </div>
-                                <div class="mt-2">
-                                    <label class="hidden text-sm block text-gray-600" for="cus_email">City</label>
-                                    <input class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded" id="cus_email" name="cus_email" type="text" required="" placeholder="City" aria-label="Email">
-                                </div>
-                                <div class="inline-block mt-2 w-1/2 pr-1">
-                                    <label class="hidden block text-sm text-gray-600" for="cus_email">Country</label>
-                                    <input class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded" id="cus_email" name="cus_email" type="text" required="" placeholder="Country" aria-label="Email">
-                                </div>
-                                <div class="inline-block mt-2 -mx-1 pl-1 w-1/2">
-                                    <label class="hidden block text-sm text-gray-600" for="cus_email">Zip</label>
-                                    <input class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded" id="cus_email"  name="cus_email" type="text" required="" placeholder="Zip" aria-label="Email">
-                                </div>
-                                <p class="text-lg text-gray-800 font-medium py-4">Payment information</p>
-                                <div class="">
-                                    <label class="block text-sm text-gray-600" for="cus_name">Card</label>
-                                    <input class="w-full px-2 py-2 text-gray-700 bg-gray-200 rounded" id="cus_name" name="cus_name" type="text" required="" placeholder="Card Number MM/YY CVC" aria-label="Name">
-                                </div>
-                                <div class="mt-6">
-                                    <button class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded" type="submit">$3.00</button>
-                                </div>
-                            </form>
-                        </div>
-                        <p class="pt-6 text-gray-600">
-                            Source: <a class="underline" href="https://tailwindcomponents.com/component/checkout-form">https://tailwindcomponents.com/component/checkout-form</a>
-                        </p>
-                    </div> --}}
                 </div>
             </main>
     
