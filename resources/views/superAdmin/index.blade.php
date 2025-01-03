@@ -89,31 +89,33 @@
             <h1 class="w-full text-3xl text-black pb-6">Dashboard</h1>
 
             <div class="flex flex-wrap">
-                <div class="w-full lg:w-1/2 my-6 pr-0 lg:pr-2">
+                <div class="w-full">
                     <p class="text-xl pb-6 flex items-center">
                         <i class="fas fa-list mr-3"></i> Activity List
                     </p>
                     <div class="leading-loose">
-                        <table class="min-w-full bg-white">
+                        <table class="w-full bg-white table-auto">
                             <thead>
                                 <tr>
-                                    <th class="py-2">Judul</th>
-                                    <th class="py-2">Deskripsi</th>
-                                    <th class="py-2">Detail Deskripsi</th>
-                                    <th class="py-2">Periode Aktivitas</th>
-                                    <th class="py-2">Jadwal Hari</th>
-                                    <th class="py-2">Jadwal Waktu</th>
+                                    <th class="py-2 px-4">Judul</th>
+                                    <th class="py-2 px-4">Deskripsi</th>
+                                    <th class="py-2 px-4">Detail Deskripsi</th>
+                                    <th class="py-2 px-4">Periode Aktivitas</th>
+                                    <th class="py-2 px-4">Jadwal Hari</th>
+                                    <th class="py-2 px-4">Jadwal Waktu</th>
+                                    <th class="py-2 px-4">Gambar/th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach($relawans as $data)
-                                <tr>
-                                    <td class="py-2">{{ $data->title }}</td>
-                                    <td class="py-2">{{ $data->description }}</td>
-                                    <td class="py-2">{{ $data->detail_activity }}</td>
-                                    <td class="py-2">{{ $data->period }}</td>
-                                    <td class="py-2">{{ $data->schedule_day }}</td>
-                                    <td class="py-2">{{ $data->schedule_time }}</td>
+                                <tr class="text-center">
+                                    <td class="py-2 px-4">{{ $data->title }}</td>
+                                    <td class="py-2 px-4">{{ $data->description }}</td>
+                                    <td class="py-2 px-4">{{ $data->detail_activity }}</td>
+                                    <td class="py-2 px-4">{{ $data->period }}</td>
+                                    <td class="py-2 px-4">{{ $data->schedule_day }}</td>
+                                    <td class="py-2 px-4">{{ $data->schedule_time }}</td>
+                                    <td class="py-2 px-4">{{ $data->img_activity }}</td>
                                 </tr>
                                 @endforeach
                             </tbody>

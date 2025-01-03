@@ -40,9 +40,9 @@ Route::get('/tes', [TesController::class, 'index'])->name('tes');
 // Auth
 
 //Super Admin
-Route::get('/SuperAdmin/index', [RelawanController::class, 'index'])->name('index');
-Route::get('/SuperAdmin/forms', [RelawanController::class, 'forms'])->name('forms');
-Route::post('/SuperAdmin/submit', [RelawanController::class, 'submit'])->name('submit');
+Route::get('/superadmin/index', [RelawanController::class, 'index'])->name('index');
+Route::get('/superadmin/forms', [RelawanController::class, 'forms'])->name('forms');
+Route::post('/superadmin/submit', [RelawanController::class, 'submit'])->name('submit');
 
 //Admin
 Route::middleware(['auth', 'admin'])->group(function () {  

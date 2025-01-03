@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('schedule_day');
             $table->time('schedule_time');
             $table->string('location');
+            $table->string('img_activity');
             $table->timestamps();
         });
     }

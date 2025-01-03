@@ -10,11 +10,11 @@
                     <a href="{{ route('home') }}">
                         <x-application-logo class="block h-9 w-auto fill-current"/>
                     </a>
-                    <h1 class="mt-5 text-2xl">Selamat datang kembali 👋</h1>
+                    <h1 class="mt-5 text-2xl">Buat Organisasi baru atau daftarkan Organisasi kamu</h1>
                     <div class="flex mt-4 py-2 px-4 w-full bg-blue-200 border border-blue-400 rounded-xl">
                         <i class="fa-solid fa-circle-info pt-0.5 flex-none text-sky-700"></i>
-                        <span class="text-sm pl-2 flex-1">Ingin mendaftarkan organisasi kamu?</span>
-                        <a href="{{ route('register/organization') }}" class="text-sm text-sky-700 underline font-semibold">Daftar Sekarang</a>
+                        <span class="text-sm pl-2 flex-1">Ingin menjadi relawan?</span>
+                        <a href="{{ route('register') }}" class="text-sm text-sky-700 underline font-semibold">Daftar Sekarang</a>
                     </div>
             
                     <div class="flex flex-col space-y-2 mt-3">

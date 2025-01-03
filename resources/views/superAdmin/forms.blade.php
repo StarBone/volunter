@@ -131,10 +131,10 @@
                                     <label class="block text-sm text-gray-600" for="location">Lokasi</label>
                                     <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="location" name="location" type="text" required="" placeholder="Lokasi" aria-label="location">
                                 </div>
-                                {{-- <div class="mt-2">
+                                <div class="mt-2">
                                     <label class="block text-sm text-gray-600" for="img_activity">Gambar</label>
                                     <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="img_activity" name="img_activity" type="file" required="" accept=".png, .jpg, .jpeg"  aria-label="img_activity">
-                                </div> --}}
+                                </div>
                                 <div class="mt-6">
                                     <button class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded" type="submit">Submit</button>
                                 </div>
