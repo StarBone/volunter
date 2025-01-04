@@ -50,7 +50,7 @@
 
                     <div class="flex flex-col space-y-2 mt-3">
                         <x-input-label for="address" :value="__('Alamat')" />
-                        <x-textarea-input id="address" class="block w-full placeholder-neutral-200" name="address" required placeholder="Masukkan alamat Anda">{{ old('address') }}</x-textarea-input>
+                        <x-textarea-input id="address" class="block w-full placeholder-neutral-200" name="address" rows="3" required placeholder="Masukkan alamat Anda">{{ old('address') }}</x-textarea-input>
                         <x-input-error :messages="$errors->get('address')" class="mt-2" />
                     </div>
             
