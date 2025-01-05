@@ -18,10 +18,12 @@ Route::middleware('guest')->group(function () {
 
     Route::post('register', [RegisteredActivityController::class, 'store']);
 //
-    Route::get('register/organization', [RegisteredOrganizationController::class, 'create'])
-        ->name('register.organization');
-
-    Route::post('register/organization', [RegisteredOrganizationController::class, 'store']);
+    Route::controller(RegisteredOrganizationController::class)->group(function () {
+        Route::get('register/organization/step-one','createStepOne')->name('register.organization.step.one');
+        Route::post('register/organization/step-one','postCreateStepOne')->name('register.organization.step.one.post');
+        Route::get('register/organization/step-two','createStepTwo')->name('register.organization.step.two');
+        Route::post('register/organization/step-two','postCreateStepTwo')->name('register.organization.step.two.post');
+    });
 //
     Route::get('login', [AuthenticatedSessionController::class, 'create'])
         ->name('login');

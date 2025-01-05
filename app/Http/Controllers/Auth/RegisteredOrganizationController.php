@@ -17,9 +17,11 @@ class RegisteredOrganizationController extends Controller
     /**
      * Display the registration view.
      */
-    public function create(): View
+    public function createStepOne(Request $request): View
     {
-        return view('auth.register-organization');
+        $user = $request->session()->get('user');
+
+        return view('auth.register-organization-one', compact('user'));
     }
 
     /**
@@ -27,27 +29,55 @@ class RegisteredOrganizationController extends Controller
      *
      * @throws \Illuminate\Validation\ValidationException
      */
-    public function store(Request $request): RedirectResponse
+    public function postCreateStepOne(Request $request): RedirectResponse
     {
-        $request->validate([
+        $validatedData = $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
-            'phone' => ['required', 'regex:/^\+?[0-9\s\-]{13,15}$/', 'unique:users,phone'],
+            'phone' => ['required', 'regex:/^8[0-9]{9,10}$/', 'unique:users,phone'],
+            'address' => ['required', 'string', 'max:500'],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
-        $user = User::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'phone' => $request->phone,
-            'password' => Hash::make($request->password),
-            'role' => 'admin',
+        if(empty($request->session()->get('user'))){
+            $user = new User();
+            $user->fill($validatedData);
+            $user->role = 'admin';
+            $request->session()->put('user', $user);
+        }else{
+            $user = $request->session()->get('user');
+            $user->fill($validatedData);
+            $user->role = 'admin';
+            $request->session()->put('user', $user);
+        }
+
+        return redirect()->route('register.organization.step.two');
+    }
+
+    public function createStepTwo(Request $request): View
+    {
+        $user = $request->session()->get('user');
+
+        return view('auth.register-organization-two', compact('user'));
+    }
+
+    public function postCreateStepTwo(Request $request): RedirectResponse
+    {
+        $validatedData = $request->validate([
+            'category' => ['required', 'string', 'max:255'],
+            'website' => ['required', 'url', 'max:255'],
         ]);
 
+        $user = $request->session()->get('user');
+        $user->fill($validatedData);
+        $user->save();
+
         event(new Registered($user));
-
+        
         Auth::login($user);
+        
+        $request->session()->forget('user');
 
-        return redirect()->route('/');
+        return redirect()->route('dashboard.organization');
     }
 }
