@@ -42,45 +42,15 @@
     
                             <div class="flex flex-col space-y-2 mt-3">
                                 <x-input-label for="category" :value="__('Kategori')" />
-                                <x-text-input id="category" class="block w-full" type="text" name="category" :value="old('category')" required placeholder="Masukkan provinsi" />
+                                <x-text-input id="category" class="block w-full" type="text" name="category" :value="old('category')" required placeholder="Masukkan kategori" />
                                 <x-input-error :messages="$errors->get('category')" class="mt-2" />
                             </div>
-                            
-                            {{-- <div class="flex flex-col space-y-2 mt-3">
-                                <x-input-label for="province" :value="__('Provinsi')" />
-                                <x-text-input id="province" class="block w-full" type="text" name="province" :value="old('province')" required placeholder="Masukkan provinsi" />
-                                <x-input-error :messages="$errors->get('province')" class="mt-2" />
-                            </div>
-    
-                            <div class="flex flex-col space-y-2 mt-3">
-                                <x-input-label for="city" :value="__('Kota')" />
-                                <x-text-input id="city" class="block w-full" type="text" name="city" :value="old('city')" required placeholder="Masukkan kota" />
-                                <x-input-error :messages="$errors->get('city')" class="mt-2" />
-                            </div> --}}
     
                             <div class="flex flex-col space-y-2 mt-3">
                                 <x-input-label for="website" :value="__('Website Organisasi (opsional)')" />
                                 <x-text-input id="website" class="block w-full" type="text" name="website" :value="old('website')" placeholder="Masukkan website organisasi" />
                                 <x-input-error :messages="$errors->get('website')" class="mt-2" />
                             </div>
-    
-                            {{-- <div class="flex flex-col space-y-2 mt-3">
-                                <x-input-label for="facebook" :value="__('Facebook Organisasi (opsional)')" />
-                                <x-text-input id="facebook" class="block w-full" type="text" name="facebook" :value="old('facebook')" placeholder="Masukkan Facebook organisasi" />
-                                <x-input-error :messages="$errors->get('facebook')" class="mt-2" />
-                            </div>
-    
-                            <div class="flex flex-col space-y-2 mt-3">
-                                <x-input-label for="instagram" :value="__('Instagram Organisasi (opsional)')" />
-                                <x-text-input id="instagram" class="block w-full" type="text" name="instagram" :value="old('instagram')" placeholder="Masukkan Instagram organisasi" />
-                                <x-input-error :messages="$errors->get('instagram')" class="mt-2" />
-                            </div>
-    
-                            <div class="flex flex-col space-y-2 mt-3">
-                                <x-input-label for="linkedln" :value="__('Linkedln Organisasi (opsional)')" />
-                                <x-text-input id="linkedln" class="block w-full" type="text" name="linkedln" :value="old('linkedln')" placeholder="Masukkan Linkedln organisasi" />
-                                <x-input-error :messages="$errors->get('linkedln')" class="mt-2" />
-                            </div> --}}
     
                             <div class="mt-5 flex justify-between">
                                 <a href="{{ route('register.organization.step.one') }}" class='inline-flex items-center px-4 py-2 bg-sky-700  border border-transparent rounded-full font-semibold text-sm text-white tracking-thight hover:bg-sky-900 focus:bg-sky-700 active:bg-sky-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150'>Kembali</a>

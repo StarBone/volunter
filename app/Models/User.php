@@ -26,7 +26,10 @@ class User extends Authenticatable implements MustVerifyEmail
         'password',
         'role',
     ];
-
+    
+    public function organization()  {
+        return $this->hasOne(Organization::class);  
+    }
     /**
      * The attributes that should be hidden for serialization.
      *
@@ -36,12 +39,14 @@ class User extends Authenticatable implements MustVerifyEmail
         'password',
         'remember_token',
     ];
-
+    
     /**
      * Get the attributes that should be cast.
      *
      * @return array<string, string>
      */
+
+    
     protected function casts(): array
     {
         return [

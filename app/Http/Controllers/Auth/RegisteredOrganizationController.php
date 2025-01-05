@@ -4,11 +4,11 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Models\Organization;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use Illuminate\View\View;
 
@@ -65,12 +65,17 @@ class RegisteredOrganizationController extends Controller
     {
         $validatedData = $request->validate([
             'category' => ['required', 'string', 'max:255'],
-            'website' => ['required', 'url', 'max:255'],
+            'website' => ['nullable', 'url', 'max:255'],
         ]);
 
         $user = $request->session()->get('user');
-        $user->fill($validatedData);
         $user->save();
+
+        $organization = new Organization();
+        $organization->user_id = $user->id;
+        $organization->category = $validatedData['category'];
+        $organization->website = $validatedData['website'];
+        $organization->save();
 
         event(new Registered($user));
         
