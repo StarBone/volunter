@@ -39,10 +39,26 @@
                                     </div>
                                 </li>
                             </ol>
-    
+                            
+                            <div class="flex flex-col space-y-2 mt-3">
+                                <x-input-label for="description" :value="__('Deskripsi Organisasi')" />
+                                <x-textarea-input id="description" class="block w-full" name="description" rows="4" required placeholder="Masukkan deskripsi organisasi">{{ old('description') }}</x-textarea-input>
+                                <x-input-error :messages="$errors->get('description')" class="mt-2" />
+                            </div>
+
                             <div class="flex flex-col space-y-2 mt-3">
                                 <x-input-label for="category" :value="__('Kategori')" />
-                                <x-text-input id="category" class="block w-full" type="text" name="category" :value="old('category')" required placeholder="Masukkan kategori" />
+                                <select class="block w-full text-neutral-500 border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm px-2 py-1" name="category[]" multiple="">
+                                    <option selected disabled>Pilih kategori</option>
+                                    <option value="education">Pendidikan</option>
+                                    <option value="health">Kesehatan</option>
+                                    <option value="environment">Lingkungan</option>
+                                    <option value="humanity">Kemanusiaan</option>
+                                    <option value="community">Komunitas</option>
+                                    <option value="social">Sosial</option>
+                                    <option value="sports">Olahraga</option>
+                                    <option value="technology">Teknologi</option>
+                                </select>
                                 <x-input-error :messages="$errors->get('category')" class="mt-2" />
                             </div>
     
@@ -50,6 +66,21 @@
                                 <x-input-label for="website" :value="__('Website Organisasi (opsional)')" />
                                 <x-text-input id="website" class="block w-full" type="text" name="website" :value="old('website')" placeholder="Masukkan website organisasi" />
                                 <x-input-error :messages="$errors->get('website')" class="mt-2" />
+                            </div>
+
+                            <div class="flex flex-col space-y-2 mt-3">  
+                                <x-input-label for="upload" :value="__('Upload file jpg, png')" />  
+                                <label for="upload" class="flex flex-col items-center block w-1/2 cursor-pointer border border-dashed border-gray-300 rounded-lg p-5 text-gray-500">  
+                                    <svg id="upload-icon" class="w-7 fill-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">  
+                                        <path d="M472,312.642v139c0,11.028-8.972,20-20,20H60c-11.028,0-20-8.972-20-20v-139H0v139c0,33.084,26.916,60,60,60h392c33.084,0,60-26.916,60-60v-139H472z"/>  
+                                        <polygon points="256,0.358 131.716,124.642 160,152.926 236,76.926 236,388.642 276,388.642 276,76.926 352,152.926 380.284,124.642"/>  
+                                    </svg>
+                                    <img id="upload-preview" class="hidden w-32 h-32 object-cover rounded-lg" />
+                                    <button id="remove-image" class="hidden mt-2 text-sm text-red-500" @click="removeImage()">Remove Image</button>
+                                    <span class="mt-2 text-sm">Upload file jpg, png</span>  
+                                    <input id="upload" class="hidden" type="file" name="upload" accept=".jpg,.png" required @change="previewImage(event)" />  
+                                </label>  
+                                <x-input-error :messages="$errors->get('upload')" class="mt-2" />  
                             </div>
     
                             <div class="mt-5 flex justify-between">

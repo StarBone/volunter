@@ -16,9 +16,9 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('phone')->unique();
-            $table->string('gender')->nullable();
-            $table->text('address')->nullable();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->string('gender');
+            $table->text('address');
+            $table->timestamp('email_verified_at');
             $table->string('password');
             $table->enum('role',['user','admin'])->default('user');
             $table->rememberToken(); // Pastikan kolom ini ada

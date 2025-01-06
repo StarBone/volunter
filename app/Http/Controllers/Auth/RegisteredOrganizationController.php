@@ -54,9 +54,13 @@ class RegisteredOrganizationController extends Controller
         return redirect()->route('register.organization.step.two');
     }
 
-    public function createStepTwo(Request $request): View
+    public function createStepTwo(Request $request): View|RedirectResponse
     {
         $user = $request->session()->get('user');
+
+        if (!$user) {
+            return redirect()->route('register.organization.step.one');
+        }
 
         return view('auth.register-organization-two', compact('user'));
     }
@@ -64,17 +68,24 @@ class RegisteredOrganizationController extends Controller
     public function postCreateStepTwo(Request $request): RedirectResponse
     {
         $validatedData = $request->validate([
-            'category' => ['required', 'string', 'max:255'],
+            'description' => ['required', 'string'],
+            'category' => ['required', 'string'],
             'website' => ['nullable', 'url', 'max:255'],
+            'logo' => ['required', 'image', 'mimes:jpg,png', 'max:1024'],
         ]);
+
+        $file = $request->file('logo');
+        $filePath = $file->store('public/images/logos');
 
         $user = $request->session()->get('user');
         $user->save();
 
         $organization = new Organization();
         $organization->user_id = $user->id;
+        $organization->description = $validatedData['description'];
         $organization->category = $validatedData['category'];
         $organization->website = $validatedData['website'];
+        $organization->logo = $filePath;
         $organization->save();
 
         event(new Registered($user));

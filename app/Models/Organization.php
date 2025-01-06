@@ -8,9 +8,12 @@ class Organization extends Model
 {
     protected $fillable = [
         'user_id',
+        'description',
         'category',
         'website',
+        'logo'
     ];
+
     public function user()  {      
         return $this->belongsTo(User::class);  
     }
